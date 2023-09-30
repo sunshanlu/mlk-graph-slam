@@ -41,6 +41,24 @@ namespace myslam
 
         void cleanMap();
 
+        std::list<Frame::Ptr> getActiveFrames()
+        {
+            std::unique_lock<std::mutex> frameLck(m_frameMutex);
+            return m_activeFrames;
+        }
+
+        std::list<MapPoint::Ptr> getActivePoints()
+        {
+            std::unique_lock<std::mutex> pointLck(m_pointMutex);
+            return m_activePoints;
+        }
+
+        void setActivePoints(std::list<MapPoint::Ptr> mapPoints)
+        {
+            std::unique_lock<std::mutex> poinLck(m_pointMutex);
+            m_activePoints = std::move(mapPoints);
+        }
+
 
     private:
 

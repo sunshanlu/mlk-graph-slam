@@ -100,14 +100,13 @@ namespace myslam
         typedef g2o::BlockSolver_6_3 BlockSolverType;
         typedef g2o::LinearSolverEigen<BlockSolverType::PoseMatrixType> LinearSolverType;
         auto solver = new g2o::OptimizationAlgorithmLevenberg(
-                g2o::make_unique<BlockSolverType>(
-                        g2o::make_unique<LinearSolverType>()));
+                g2o::make_unique<BlockSolverType>(g2o::make_unique<LinearSolverType>()));
 
         g2o::SparseOptimizer graph;
         graph.setAlgorithm(solver);
 
         // construct camera Pose Vertex
-        auto *vertexPose = new VertexPose();
+        auto *vertexPose = new VertexPose;
         vertexPose->setId(0);
         vertexPose->setEstimate(m_currFrame->pose());
         graph.addVertex(vertexPose);
@@ -120,8 +119,10 @@ namespace myslam
 
         for (const auto &feature: leftFeatures) {
             if (feature == nullptr) continue;
-            features.push_back(feature);
             const auto &mapPoint = feature->mapPoint().lock();
+            if (mapPoint == nullptr) continue;
+
+            features.push_back(feature);
             auto *edge = new EdgePoseOnly(mapPoint->position(), m_camera->K());
             edge->setId(edgeID++);
             edge->setVertex(0, vertexPose);

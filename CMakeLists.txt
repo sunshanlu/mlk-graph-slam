@@ -6,19 +6,7 @@ set(CMAKE_BUILD_TYPE "Release")
 
 set(G2O_LIBRARIES g2o_core g2o_stuff g2o_types_sba g2o_solver_csparse g2o_csparse_extension)
 set(DEPEND_LIB depend_lib)
-#file(GLOB SRC_FILES src/*.cpp)
-set(SRC_FILES
-        src/main.cpp
-        src/Camera.cpp
-        src/Dataset.cpp
-        src/Feature.cpp
-        src/Frame.cpp
-        src/G2OTypes.cpp
-        src/MapPoint.cpp
-        src/Map.cpp
-        src/Viewer.cpp
-        src/FrontEnd.cpp
-)
+file(GLOB SRC_FILES src/*.cpp)
 
 include_directories(include)
 
