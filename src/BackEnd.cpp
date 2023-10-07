@@ -22,7 +22,10 @@ namespace myslam
     void BackEnd::run()
     {
         while (!m_stop) {
-            // todo: 这里需要使用条件变量进行等待
+            std::unique_lock<std::mutex> pointLck(m_map->getPointMutex());
+            m_map->getCond().wait(pointLck, [this] { return m_map->isUpdate(); });
+
+            std::cout << "==========backend start optimize==========" << std::endl;
             optimize();
         }
     }
@@ -48,7 +51,7 @@ namespace myslam
         std::vector<VertexPose *> poseVertexes;
         std::vector<VertexXYZ *> xyzVertexes;
 
-        auto activeKeyFrames = m_map->getActiveFrames();
+        auto activeKeyFrames = m_map->getActiveFrames(true);
         std::list<MapPoint::Ptr> activeMapPoints;
 
         for (const auto &keyFrame: activeKeyFrames) {
@@ -90,6 +93,8 @@ namespace myslam
 
         // 将优化后的结果写入类中
         assert(poseVertexes.size() == activeKeyFrames.size());
+        assert(xyzVertexes.size() == activeMapPoints.size());
+
         auto vertex = poseVertexes.begin();
         auto keyFrame = activeKeyFrames.begin();
         while (true) {
@@ -99,7 +104,17 @@ namespace myslam
             ++keyFrame;
         }
 
+        auto xyzVertex = xyzVertexes.begin();
+        auto mapPoint = activeMapPoints.begin();
+        while (true) {
+            if (xyzVertex == xyzVertexes.end()) break;
+            (*mapPoint)->position() = (*xyzVertex)->estimate();
+            ++xyzVertex;
+            ++mapPoint;
+        }
+
         // todo: 做mapPoint的清理工作
+
         m_map->setActivePoints(activeMapPoints);
     }
 }

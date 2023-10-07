@@ -3,6 +3,7 @@ project(myslam)
 
 add_subdirectory(test)
 set(CMAKE_BUILD_TYPE "Release")
+#set(CMAKE_BUILD_TYPE "Debug")
 
 set(G2O_LIBRARIES g2o_core g2o_stuff g2o_types_sba g2o_solver_csparse g2o_csparse_extension)
 set(DEPEND_LIB depend_lib)

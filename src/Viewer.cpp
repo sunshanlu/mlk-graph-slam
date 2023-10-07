@@ -38,13 +38,10 @@ namespace myslam
             glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
             vis_display.Activate(vis_camera);
             if (!m_frame) continue;
-            cv::Mat img;
-            drawIMG(img);
-            cv::imshow("currLeftIMG", img);
-            cv::waitKey(1);
-            drawFrame(vis_camera);
-
+            drawCurrFrame(vis_camera);
+            if (m_map) drawActiveMap();
             pangolin::FinishFrame();
+            cv::waitKey(1);
             std::this_thread::sleep_for(std::chrono::milliseconds(10));  // sleep for 5ms
         }
     }
@@ -67,53 +64,92 @@ namespace myslam
 
     void Viewer::drawPoint(const Eigen::Vector3d &mapPoint)
     {
-        glColor3f(1.0f, 0.0f, 0.0f);
+        glColor3f(m_pointColor[0], m_pointColor[1], m_pointColor[2]);
         glVertex3d(mapPoint.x(), mapPoint.y(), mapPoint.z());
     }
 
 
-    void Viewer::drawFrame(pangolin::OpenGlRenderState &vis_camera)
+    Eigen::Matrix4d Viewer::drawFrame(Frame::Ptr &frame, bool isKf) const
     {
-        Sophus::SE3d Twc = m_frame->pose().inverse();
-        const float sz = 1.0;
-        const int line_width = 2.0;
-        const float fx = 400;
-        const float fy = 400;
-        const float cx = 512;
-        const float cy = 384;
-        const float width = 1080;
-        const float height = 768;
+        Sophus::SE3d Twc = frame->pose().inverse();
         glPushMatrix();
         Sophus::Matrix4f m = Twc.matrix().template cast<float>();
         glMultMatrixf((GLfloat *) m.data());
-        glColor3f(1, 0, 0);
-        glLineWidth(line_width);
+        if (isKf) glColor3f(m_kfColor[0], m_kfColor[1], m_kfColor[2]);
+        else glColor3f(m_frameColor[0], m_frameColor[1], m_frameColor[2]);
+        glLineWidth(m_line_width);
         glBegin(GL_LINES);
         glVertex3f(0, 0, 0);
-        glVertex3f(sz * (0 - cx) / fx, sz * (0 - cy) / fy, sz);
+        glVertex3f(m_sz * (0 - m_cx) / m_fx, m_sz * (0 - m_cy) / m_fy, m_sz);
         glVertex3f(0, 0, 0);
-        glVertex3f(sz * (0 - cx) / fx, sz * (height - 1 - cy) / fy, sz);
+        glVertex3f(m_sz * (0 - m_cx) / m_fx, m_sz * (m_height - 1 - m_cy) / m_fy, m_sz);
         glVertex3f(0, 0, 0);
-        glVertex3f(sz * (width - 1 - cx) / fx, sz * (height - 1 - cy) / fy, sz);
+        glVertex3f(m_sz * (m_width - 1 - m_cx) / m_fx, m_sz * (m_height - 1 - m_cy) / m_fy, m_sz);
         glVertex3f(0, 0, 0);
-        glVertex3f(sz * (width - 1 - cx) / fx, sz * (0 - cy) / fy, sz);
+        glVertex3f(m_sz * (m_width - 1 - m_cx) / m_fx, m_sz * (0 - m_cy) / m_fy, m_sz);
 
-        glVertex3f(sz * (width - 1 - cx) / fx, sz * (0 - cy) / fy, sz);
-        glVertex3f(sz * (width - 1 - cx) / fx, sz * (height - 1 - cy) / fy, sz);
+        glVertex3f(m_sz * (m_width - 1 - m_cx) / m_fx, m_sz * (0 - m_cy) / m_fy, m_sz);
+        glVertex3f(m_sz * (m_width - 1 - m_cx) / m_fx, m_sz * (m_height - 1 - m_cy) / m_fy, m_sz);
 
-        glVertex3f(sz * (width - 1 - cx) / fx, sz * (height - 1 - cy) / fy, sz);
-        glVertex3f(sz * (0 - cx) / fx, sz * (height - 1 - cy) / fy, sz);
+        glVertex3f(m_sz * (m_width - 1 - m_cx) / m_fx, m_sz * (m_height - 1 - m_cy) / m_fy, m_sz);
+        glVertex3f(m_sz * (0 - m_cx) / m_fx, m_sz * (m_height - 1 - m_cy) / m_fy, m_sz);
 
-        glVertex3f(sz * (0 - cx) / fx, sz * (height - 1 - cy) / fy, sz);
-        glVertex3f(sz * (0 - cx) / fx, sz * (0 - cy) / fy, sz);
+        glVertex3f(m_sz * (0 - m_cx) / m_fx, m_sz * (m_height - 1 - m_cy) / m_fy, m_sz);
+        glVertex3f(m_sz * (0 - m_cx) / m_fx, m_sz * (0 - m_cy) / m_fy, m_sz);
 
-        glVertex3f(sz * (0 - cx) / fx, sz * (0 - cy) / fy, sz);
-        glVertex3f(sz * (width - 1 - cx) / fx, sz * (0 - cy) / fy, sz);
+        glVertex3f(m_sz * (0 - m_cx) / m_fx, m_sz * (0 - m_cy) / m_fy, m_sz);
+        glVertex3f(m_sz * (m_width - 1 - m_cx) / m_fx, m_sz * (0 - m_cy) / m_fy, m_sz);
 
         glEnd();
         glPopMatrix();
 
-        pangolin::OpenGlMatrix matrix(Twc.matrix());
-        vis_camera.Follow(matrix, true);
+        return Twc.matrix();
+    }
+
+//    void Viewer::drawFrame(pangolin::OpenGlRenderState &vis_camera)
+//    {
+//        Sophus::SE3d Twc = m_frame->pose().inverse();
+//        glPushMatrix();
+//        Sophus::Matrix4f m = Twc.matrix().template cast<float>();
+//        glMultMatrixf((GLfloat *) m.data());
+//        glColor3f(1, 0, 0);
+//        glLineWidth(m_line_width);
+//        glBegin(GL_LINES);
+//        glVertex3f(0, 0, 0);
+//        glVertex3f(m_sz * (0 - m_cx) / m_fx, m_sz * (0 - m_cy) / m_fy, m_sz);
+//        glVertex3f(0, 0, 0);
+//        glVertex3f(m_sz * (0 - m_cx) / m_fx, m_sz * (m_height - 1 - m_cy) / m_fy, m_sz);
+//        glVertex3f(0, 0, 0);
+//        glVertex3f(m_sz * (m_width - 1 - m_cx) / m_fx, m_sz * (m_height - 1 - m_cy) / m_fy, m_sz);
+//        glVertex3f(0, 0, 0);
+//        glVertex3f(m_sz * (m_width - 1 - m_cx) / m_fx, m_sz * (0 - m_cy) / m_fy, m_sz);
+//
+//        glVertex3f(m_sz * (m_width - 1 - m_cx) / m_fx, m_sz * (0 - m_cy) / m_fy, m_sz);
+//        glVertex3f(m_sz * (m_width - 1 - m_cx) / m_fx, m_sz * (m_height - 1 - m_cy) / m_fy, m_sz);
+//
+//        glVertex3f(m_sz * (m_width - 1 - m_cx) / m_fx, m_sz * (m_height - 1 - m_cy) / m_fy, m_sz);
+//        glVertex3f(m_sz * (0 - m_cx) / m_fx, m_sz * (m_height - 1 - m_cy) / m_fy, m_sz);
+//
+//        glVertex3f(m_sz * (0 - m_cx) / m_fx, m_sz * (m_height - 1 - m_cy) / m_fy, m_sz);
+//        glVertex3f(m_sz * (0 - m_cx) / m_fx, m_sz * (0 - m_cy) / m_fy, m_sz);
+//
+//        glVertex3f(m_sz * (0 - m_cx) / m_fx, m_sz * (0 - m_cy) / m_fy, m_sz);
+//        glVertex3f(m_sz * (m_width - 1 - m_cx) / m_fx, m_sz * (0 - m_cy) / m_fy, m_sz);
+//
+//        glEnd();
+//        glPopMatrix();
+//
+//        pangolin::OpenGlMatrix matrix(Twc.matrix());
+//        vis_camera.Follow(matrix, true);
+//    }
+
+    void Viewer::drawActiveMap()
+    {
+        for (auto &keyFrame: m_map->getActiveFrames()) {
+            drawFrame(keyFrame, true);
+        }
+        for (auto &point: m_map->getActivePoints()) {
+            drawPoint(point->position());
+        }
     }
 } // myslam

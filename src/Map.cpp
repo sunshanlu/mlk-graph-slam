@@ -2,6 +2,7 @@
 // Created by rookie-lu on 23-9-25.
 //
 
+#include <condition_variable>
 #include "myslam/Map.h"
 
 namespace myslam
@@ -23,12 +24,15 @@ namespace myslam
 
     Frame::Ptr Map::insertKeyFrame(const Frame::Ptr &frame)
     {
-        std::unique_lock<std::mutex> frameLck(m_frameMutex);
+        std::unique_lock<std::mutex> frameLck(m_pointMutex);
         m_allFrames.push_back(frame);
         Frame::Ptr popFrame;
         if (m_activeFrames.size() == 7)  // todo: 将7写入config文件
             popFrame = removeOldKeyFrame(frame);
         m_activeFrames.push_back(frame);
+        m_isUpdate = true;  // 在frontend里面设置false
+        // todo: 使用notify_one()进行线程唤醒
+        m_cond.notify_one();
         return popFrame;
     }
 
@@ -57,7 +61,7 @@ namespace myslam
                 minID = otherFrame;
             }
         }
-        if (minDistance < 0.2)
+        if (minDistance < minMaxTh)
             popFrame = minID;
         else
             popFrame = maxID;
@@ -76,6 +80,7 @@ namespace myslam
         for (const auto &point: mapPoints) {
             m_allPoints.push_back(point);
         }
+        m_isUpdate = false;
     }
 
 } // myslam

@@ -5,6 +5,8 @@
 #ifndef MYSLAM_FRONTEND_H
 #define MYSLAM_FRONTEND_H
 
+#include <mutex>
+
 #include <g2o/core/sparse_optimizer.h>
 
 #include "myslam/Feature.h"

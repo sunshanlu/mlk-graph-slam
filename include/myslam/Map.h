@@ -8,6 +8,7 @@
 #include <vector>
 #include <queue>
 #include <mutex>
+#include <condition_variable>
 
 #include "myslam/Frame.h"
 #include "myslam/MapPoint.h"
@@ -41,9 +42,11 @@ namespace myslam
 
         void cleanMap();
 
-        std::list<Frame::Ptr> getActiveFrames()
+        std::list<Frame::Ptr> getActiveFrames(bool isLocked = false)
         {
-            std::unique_lock<std::mutex> frameLck(m_frameMutex);
+            if (!isLocked)
+                std::unique_lock<std::mutex> frameLck(m_pointMutex);
+
             return m_activeFrames;
         }
 
@@ -55,9 +58,18 @@ namespace myslam
 
         void setActivePoints(std::list<MapPoint::Ptr> mapPoints)
         {
-            std::unique_lock<std::mutex> poinLck(m_pointMutex);
+            // std::unique_lock<std::mutex> pointLck(m_pointMutex);
             m_activePoints = std::move(mapPoints);
         }
+
+        std::mutex &getPointMutex()
+        { return m_pointMutex; }
+
+        bool isUpdate() const
+        { return m_isUpdate; }
+
+        std::condition_variable &getCond()
+        { return m_cond; }
 
 
     private:
@@ -72,8 +84,11 @@ namespace myslam
         std::list<Frame::Ptr> m_activeFrames;
         std::list<MapPoint::Ptr> m_activePoints;
 
-        std::mutex m_frameMutex;
         std::mutex m_pointMutex;
+
+        bool m_isUpdate = false;
+
+        std::condition_variable m_cond;
     };
 
 } // myslam

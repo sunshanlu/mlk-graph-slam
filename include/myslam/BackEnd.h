@@ -6,6 +6,7 @@
 #define MYSLAM_BACKEND_H
 
 #include <memory>
+#include <condition_variable>
 
 #include <Eigen/Dense>
 
