@@ -1,0 +1,205 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MLK-SLAM: include/common_include.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygenextra.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="topbanner"><a href="https://github.com/crazyzlj/TutorialCppProject" title="TutorialCppProject by Liangjun Zhu"><i class="githublogo"></i></a></div>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('common__include_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle"><div class="title">common_include.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>引入所有所需头文件，定义所有所需超参数  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;condition_variable&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;Eigen/Dense&gt;</code><br />
+<code>#include &lt;fmt/format.h&gt;</code><br />
+<code>#include &lt;g2o/core/base_binary_edge.h&gt;</code><br />
+<code>#include &lt;g2o/core/base_unary_edge.h&gt;</code><br />
+<code>#include &lt;g2o/core/base_vertex.h&gt;</code><br />
+<code>#include &lt;g2o/core/block_solver.h&gt;</code><br />
+<code>#include &lt;g2o/core/optimization_algorithm_levenberg.h&gt;</code><br />
+<code>#include &lt;g2o/core/robust_kernel_impl.h&gt;</code><br />
+<code>#include &lt;g2o/core/sparse_optimizer.h&gt;</code><br />
+<code>#include &lt;g2o/solvers/dense/linear_solver_dense.h&gt;</code><br />
+<code>#include &lt;json/json.h&gt;</code><br />
+<code>#include &lt;opencv2/opencv.hpp&gt;</code><br />
+<code>#include &lt;pangolin/pangolin.h&gt;</code><br />
+<code>#include &lt;sophus/se3.hpp&gt;</code><br />
+<code>#include &lt;spdlog/spdlog.h&gt;</code><br />
+</div>
+<p><a href="common__include_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a5a86b9e7eb5bd40ee1b3f3cf9f16b516" id="r_a5a86b9e7eb5bd40ee1b3f3cf9f16b516"><td class="memItemLeft" align="right" valign="top"><a id="a5a86b9e7eb5bd40ee1b3f3cf9f16b516" name="a5a86b9e7eb5bd40ee1b3f3cf9f16b516"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NAMESPACE_BEGIN</b>&#160;&#160;&#160;namespace myslam {</td></tr>
+<tr class="separator:a5a86b9e7eb5bd40ee1b3f3cf9f16b516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a552036593282adfb00999ab4152fc0ac" id="r_a552036593282adfb00999ab4152fc0ac"><td class="memItemLeft" align="right" valign="top"><a id="a552036593282adfb00999ab4152fc0ac" name="a552036593282adfb00999ab4152fc0ac"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NAMESPACE_END</b>&#160;&#160;&#160;}</td></tr>
+<tr class="separator:a552036593282adfb00999ab4152fc0ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ca299efe484aae1d810706deae4909e" id="r_a9ca299efe484aae1d810706deae4909e"><td class="memItemLeft" align="right" valign="top"><a id="a9ca299efe484aae1d810706deae4909e" name="a9ca299efe484aae1d810706deae4909e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>USE_EIGEN</b></td></tr>
+<tr class="separator:a9ca299efe484aae1d810706deae4909e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ad91c18485ef230f516c4675752c93cad" id="r_ad91c18485ef230f516c4675752c93cad"><td class="memItemLeft" align="right" valign="top"><a id="ad91c18485ef230f516c4675752c93cad" name="ad91c18485ef230f516c4675752c93cad"></a>
+typedef Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><b>Vec3d</b></td></tr>
+<tr class="separator:ad91c18485ef230f516c4675752c93cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08d7cd0a548297c33e3493a8a177b327" id="r_a08d7cd0a548297c33e3493a8a177b327"><td class="memItemLeft" align="right" valign="top"><a id="a08d7cd0a548297c33e3493a8a177b327" name="a08d7cd0a548297c33e3493a8a177b327"></a>
+typedef Eigen::Matrix4d&#160;</td><td class="memItemRight" valign="bottom"><b>Vec4d</b></td></tr>
+<tr class="separator:a08d7cd0a548297c33e3493a8a177b327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adebe05710ab35301f17f7ac387e64699" id="r_adebe05710ab35301f17f7ac387e64699"><td class="memItemLeft" align="right" valign="top"><a id="adebe05710ab35301f17f7ac387e64699" name="adebe05710ab35301f17f7ac387e64699"></a>
+typedef Eigen::Matrix&lt; double, 6, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Vec6d</b></td></tr>
+<tr class="separator:adebe05710ab35301f17f7ac387e64699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac49ab3df8372759f7162c6f4634d043d" id="r_ac49ab3df8372759f7162c6f4634d043d"><td class="memItemLeft" align="right" valign="top"><a id="ac49ab3df8372759f7162c6f4634d043d" name="ac49ab3df8372759f7162c6f4634d043d"></a>
+typedef Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><b>Mat3d</b></td></tr>
+<tr class="separator:ac49ab3df8372759f7162c6f4634d043d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99c695b78b6b9a69c3cb6cb8d873f127" id="r_a99c695b78b6b9a69c3cb6cb8d873f127"><td class="memItemLeft" align="right" valign="top"><a id="a99c695b78b6b9a69c3cb6cb8d873f127" name="a99c695b78b6b9a69c3cb6cb8d873f127"></a>
+typedef Eigen::Matrix4d&#160;</td><td class="memItemRight" valign="bottom"><b>Mat4d</b></td></tr>
+<tr class="separator:a99c695b78b6b9a69c3cb6cb8d873f127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a7609bac79efbe3d88c961c43435381" id="r_a7a7609bac79efbe3d88c961c43435381"><td class="memItemLeft" align="right" valign="top"><a id="a7a7609bac79efbe3d88c961c43435381" name="a7a7609bac79efbe3d88c961c43435381"></a>
+typedef Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><b>Mat4f</b></td></tr>
+<tr class="separator:a7a7609bac79efbe3d88c961c43435381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7115de752897d3fc2ae93dc85d4355de" id="r_a7115de752897d3fc2ae93dc85d4355de"><td class="memItemLeft" align="right" valign="top"><a id="a7115de752897d3fc2ae93dc85d4355de" name="a7115de752897d3fc2ae93dc85d4355de"></a>
+typedef Eigen::Matrix2d&#160;</td><td class="memItemRight" valign="bottom"><b>Mat2d</b></td></tr>
+<tr class="separator:a7115de752897d3fc2ae93dc85d4355de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fef414fdbd07fc0627490df0ab59f84" id="r_a3fef414fdbd07fc0627490df0ab59f84"><td class="memItemLeft" align="right" valign="top"><a id="a3fef414fdbd07fc0627490df0ab59f84" name="a3fef414fdbd07fc0627490df0ab59f84"></a>
+typedef Eigen::Matrix&lt; double, Eigen::Dynamic, Eigen::Dynamic &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MatXd</b></td></tr>
+<tr class="separator:a3fef414fdbd07fc0627490df0ab59f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908352bd049edd1302a2166e9fb81b3b" id="r_a908352bd049edd1302a2166e9fb81b3b"><td class="memItemLeft" align="right" valign="top"><a id="a908352bd049edd1302a2166e9fb81b3b" name="a908352bd049edd1302a2166e9fb81b3b"></a>
+typedef Eigen::Matrix&lt; double, 3, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Mat34d</b></td></tr>
+<tr class="separator:a908352bd049edd1302a2166e9fb81b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2d7a3cd7c9bf13362f2a38ce69a2a95" id="r_aa2d7a3cd7c9bf13362f2a38ce69a2a95"><td class="memItemLeft" align="right" valign="top"><a id="aa2d7a3cd7c9bf13362f2a38ce69a2a95" name="aa2d7a3cd7c9bf13362f2a38ce69a2a95"></a>
+typedef Eigen::Matrix&lt; double, 1, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Mat14d</b></td></tr>
+<tr class="separator:aa2d7a3cd7c9bf13362f2a38ce69a2a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b05e098e742b1e5bb918ed54b17b97f" id="r_a8b05e098e742b1e5bb918ed54b17b97f"><td class="memItemLeft" align="right" valign="top"><a id="a8b05e098e742b1e5bb918ed54b17b97f" name="a8b05e098e742b1e5bb918ed54b17b97f"></a>
+typedef Sophus::SE3d&#160;</td><td class="memItemRight" valign="bottom"><b>SE3d</b></td></tr>
+<tr class="separator:a8b05e098e742b1e5bb918ed54b17b97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a1425e6403e71f6b91b8de1d833ec8f" id="r_a0a1425e6403e71f6b91b8de1d833ec8f"><td class="memItemLeft" align="right" valign="top"><a id="a0a1425e6403e71f6b91b8de1d833ec8f" name="a0a1425e6403e71f6b91b8de1d833ec8f"></a>
+typedef Sophus::SO3d&#160;</td><td class="memItemRight" valign="bottom"><b>SO3d</b></td></tr>
+<tr class="separator:a0a1425e6403e71f6b91b8de1d833ec8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311e4d45e3e9989203610f8b3aa5e717" id="r_a311e4d45e3e9989203610f8b3aa5e717"><td class="memItemLeft" align="right" valign="top"><a id="a311e4d45e3e9989203610f8b3aa5e717" name="a311e4d45e3e9989203610f8b3aa5e717"></a>
+typedef g2o::BlockSolver_6_3&#160;</td><td class="memItemRight" valign="bottom"><b>BlockSolverType</b></td></tr>
+<tr class="separator:a311e4d45e3e9989203610f8b3aa5e717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a21bb7fa198658a6c61223b5a96f9d" id="r_a38a21bb7fa198658a6c61223b5a96f9d"><td class="memItemLeft" align="right" valign="top"><a id="a38a21bb7fa198658a6c61223b5a96f9d" name="a38a21bb7fa198658a6c61223b5a96f9d"></a>
+typedef g2o::LinearSolverDense&lt; BlockSolverType::PoseMatrixType &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>LinearSolverType</b></td></tr>
+<tr class="separator:a38a21bb7fa198658a6c61223b5a96f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a7dc7a61db61f8631ad302f6d26501143" id="r_a7dc7a61db61f8631ad302f6d26501143"><td class="memItemLeft" align="right" valign="top"><a id="a7dc7a61db61f8631ad302f6d26501143" name="a7dc7a61db61f8631ad302f6d26501143"></a>
+NAMESPACE_BEGIN typedef Eigen::Vector2d&#160;</td><td class="memItemRight" valign="bottom"><b>Vec2d</b></td></tr>
+<tr class="separator:a7dc7a61db61f8631ad302f6d26501143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>引入所有所需头文件，定义所有所需超参数 </p>
+<dl class="section author"><dt>作者</dt><dd>rookie-lu (<a href="#" onclick="location.href='mai'+'lto:'+'ssl'+'20'+'01@'+'12'+'6.c'+'om'; return false;">ssl20<span class="obfuscator">.nosp@m.</span>01@1<span class="obfuscator">.nosp@m.</span>26.co<span class="obfuscator">.nosp@m.</span>m</a>) </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>Oct-28-2023</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (c) 2023 rookie-lu </dd></dl>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.15-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="common__include_8h.html">common_include.h</a></li>
+  </ul>
+</div>
+</body>
+</html>
