@@ -1,54 +1,52 @@
 cmake_minimum_required(VERSION 3.15)
-project(myslam)
+
+project(mlk-slam CXX)
+set(DEPEND_LIBS depend_libs)
+# set(CMAKE_BUILD_TYPE "Debug")
+set(CMAKE_BUILD_TYPE "Release")
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 add_subdirectory(test)
-set(CMAKE_BUILD_TYPE "Release")
-#set(CMAKE_BUILD_TYPE "Debug")
 
-set(G2O_LIBRARIES g2o_core g2o_stuff g2o_types_sba g2o_solver_csparse g2o_csparse_extension)
-set(DEPEND_LIB depend_lib)
-file(GLOB SRC_FILES src/*.cpp)
-
-include_directories(include)
-
+include_directories("${PROJECT_SOURCE_DIR}/include")
+include_directories("/usr/include/eigen3")
 list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
+set(G2O_LIBS g2o_core g2o_stuff g2o_types_sba g2o_solver_csparse
+             g2o_csparse_extension)
+
+file(GLOB SRC_FILES "${PROJECT_SOURCE_DIR}/src/*.cc")
 
 find_package(OpenCV 3.1 REQUIRED)
-find_package(Eigen3 REQUIRED)
 find_package(Sophus REQUIRED)
+find_package(FMT REQUIRED)
 find_package(Pangolin REQUIRED)
 find_package(G2O REQUIRED)
-find_package(fmt REQUIRED)
 find_package(Glog REQUIRED)
+find_package(GFlags REQUIRED)
+find_package(spdlog REQUIRED)
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(JSONCPP jsoncpp REQUIRED IMPORTED_TARGET)
 
-add_library(${DEPEND_LIB} INTERFACE)
+add_library(${DEPEND_LIBS} INTERFACE)
+target_include_directories(
+        ${DEPEND_LIBS}
+        INTERFACE ${OpenCV_INCLUDE_DIRS}
+        INTERFACE ${Pangolin_INCLUDE_DIRS}
+        INTERFACE ${Sophus_INCLUDE_DIRS}
+        INTERFACE ${G2O_INCLUDE_DIRS}
+        INTERFACE ${FMT_INCLUDE_DIRS})
 target_link_libraries(
-        ${DEPEND_LIB}
+        ${DEPEND_LIBS}
         INTERFACE ${OpenCV_LIBS}
         INTERFACE Sophus::Sophus
-        INTERFACE fmt::fmt
         INTERFACE ${Pangolin_LIBRARIES}
-        INTERFACE ${G2O_LIBRARIES}
+        # INTERFACE fmt::fmt
+        INTERFACE spdlog::spdlog
+        INTERFACE ${G2O_LIBS}
+        INTERFACE ${GFLAGS_LIBRARIES}
         INTERFACE ${GLOG_LIBRARIES}
-)
-target_include_directories(
-        ${DEPEND_LIB}
-        INTERFACE ${OpenCV_INCLUDE_DIRS}
-        INTERFACE ${Sophus_INCLUDE_DIRS}
-        INTERFACE ${Pangolin_INCLUDE_DIRS}
-        INTERFACE ${EIGEN3_INCLUDE_DIRS}
-        INTERFACE ${G2O_INCLUDE_DIRS}
-)
-
-message(STATUS OPENCV_INCLUDE_DIRS--${OpenCV_INCLUDE_DIRS})
-message(STATUS Sophus_INCLUDE_DIRS--${Sophus_INCLUDE_DIRS})
-message(STATUS Pangolin_INCLUDE_DIRS--${Pangolin_INCLUDE_DIRS})
-message(STATUS EIGEN3_INCLUDE_DIRS--${EIGEN3_INCLUDE_DIRS})
-message(STATUS G2O_LIBRARIES -- ${G2O_LIBRARIES})
-message(STATUS G2O_INCLUDE_DIRS -- ${G2O_INCLUDE_DIRS})
+        INTERFACE PkgConfig::JSONCPP)
 
 add_executable(${PROJECT_NAME} ${SRC_FILES})
-target_link_libraries(
-        ${PROJECT_NAME}
-        ${DEPEND_LIB}
-)
+target_link_libraries(${PROJECT_NAME} ${DEPEND_LIBS})
