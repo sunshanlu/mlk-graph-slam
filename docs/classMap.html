@@ -1,0 +1,261 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MLK-SLAM: Map类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygenextra.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="topbanner"><a href="https://github.com/crazyzlj/TutorialCppProject" title="TutorialCppProject by Liangjun Zhu"><i class="githublogo"></i></a></div>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classMap.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classMap-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">Map类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Map用作前端、展示和后端的交互中心（单例设计模式）  
+ <a href="classMap.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="map_8h_source.html">map.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a1c05dd1b759f1f135f7da2d9b196bd8f" id="r_a1c05dd1b759f1f135f7da2d9b196bd8f"><td class="memItemLeft" align="right" valign="top"><a id="a1c05dd1b759f1f135f7da2d9b196bd8f" name="a1c05dd1b759f1f135f7da2d9b196bd8f"></a>
+typedef std::unordered_map&lt; std::size_t, Frame::Ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>FramesType</b></td></tr>
+<tr class="separator:a1c05dd1b759f1f135f7da2d9b196bd8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad27f48bd91962569a5272ee1503dfcd1" id="r_ad27f48bd91962569a5272ee1503dfcd1"><td class="memItemLeft" align="right" valign="top"><a id="ad27f48bd91962569a5272ee1503dfcd1" name="ad27f48bd91962569a5272ee1503dfcd1"></a>
+typedef std::unordered_map&lt; std::size_t, MapPoint::Ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PointsType</b></td></tr>
+<tr class="separator:ad27f48bd91962569a5272ee1503dfcd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a5618697d5c1aadb33ac680f5bb6f7d90" id="r_a5618697d5c1aadb33ac680f5bb6f7d90"><td class="memItemLeft" align="right" valign="top"><a id="a5618697d5c1aadb33ac680f5bb6f7d90" name="a5618697d5c1aadb33ac680f5bb6f7d90"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Map</b> (const <a class="el" href="classMap.html">Map</a> &amp;other)=delete</td></tr>
+<tr class="separator:a5618697d5c1aadb33ac680f5bb6f7d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dbe2e14e3d1654fee036a8011de49f7" id="r_a9dbe2e14e3d1654fee036a8011de49f7"><td class="memItemLeft" align="right" valign="top"><a id="a9dbe2e14e3d1654fee036a8011de49f7" name="a9dbe2e14e3d1654fee036a8011de49f7"></a>
+<a class="el" href="classMap.html">Map</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classMap.html">Map</a> &amp;other)=delete</td></tr>
+<tr class="separator:a9dbe2e14e3d1654fee036a8011de49f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac730e7ff2aac962c2aad28166a8a16c2" id="r_ac730e7ff2aac962c2aad28166a8a16c2"><td class="memItemLeft" align="right" valign="top"><a id="ac730e7ff2aac962c2aad28166a8a16c2" name="ac730e7ff2aac962c2aad28166a8a16c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>insertMapPoints</b> (const std::vector&lt; MapPoint::Ptr &gt; &amp;mapPoints)</td></tr>
+<tr class="separator:ac730e7ff2aac962c2aad28166a8a16c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff42b7b2ef5614da322e5bc95f8d5811" id="r_aff42b7b2ef5614da322e5bc95f8d5811"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMap.html#aff42b7b2ef5614da322e5bc95f8d5811">insertKeyFrame</a> (const Frame::Ptr &amp;keyFrame)</td></tr>
+<tr class="memdesc:aff42b7b2ef5614da322e5bc95f8d5811"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加关键帧到Map中  <br /></td></tr>
+<tr class="separator:aff42b7b2ef5614da322e5bc95f8d5811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1691a86a0d643207dac25fb935260a11" id="r_a1691a86a0d643207dac25fb935260a11"><td class="memItemLeft" align="right" valign="top"><a id="a1691a86a0d643207dac25fb935260a11" name="a1691a86a0d643207dac25fb935260a11"></a>
+FramesType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getActiveFrames</b> ()</td></tr>
+<tr class="memdesc:a1691a86a0d643207dac25fb935260a11"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取激活关键帧 <br /></td></tr>
+<tr class="separator:a1691a86a0d643207dac25fb935260a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca985b0fd1df002de4b3eb729aae5cf2" id="r_aca985b0fd1df002de4b3eb729aae5cf2"><td class="memItemLeft" align="right" valign="top"><a id="aca985b0fd1df002de4b3eb729aae5cf2" name="aca985b0fd1df002de4b3eb729aae5cf2"></a>
+PointsType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getActivePoints</b> ()</td></tr>
+<tr class="memdesc:aca985b0fd1df002de4b3eb729aae5cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取激活地图点 <br /></td></tr>
+<tr class="separator:aca985b0fd1df002de4b3eb729aae5cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac26b8894f259299c5894f729bdb5d88" id="r_aac26b8894f259299c5894f729bdb5d88"><td class="memItemLeft" align="right" valign="top"><a id="aac26b8894f259299c5894f729bdb5d88" name="aac26b8894f259299c5894f729bdb5d88"></a>
+FramesType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getAllFrames</b> ()</td></tr>
+<tr class="memdesc:aac26b8894f259299c5894f729bdb5d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取地图中所有关键帧 <br /></td></tr>
+<tr class="separator:aac26b8894f259299c5894f729bdb5d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e21fa436456acc114c55bfae940b69" id="r_ae1e21fa436456acc114c55bfae940b69"><td class="memItemLeft" align="right" valign="top"><a id="ae1e21fa436456acc114c55bfae940b69" name="ae1e21fa436456acc114c55bfae940b69"></a>
+PointsType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getAllPoints</b> ()</td></tr>
+<tr class="memdesc:ae1e21fa436456acc114c55bfae940b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取地图中所有地图点 <br /></td></tr>
+<tr class="separator:ae1e21fa436456acc114c55bfae940b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f729ac56b6c80c6b01f7a8412a119e4" id="r_a7f729ac56b6c80c6b01f7a8412a119e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMap.html#a7f729ac56b6c80c6b01f7a8412a119e4">removeOldFrame</a> (const Frame::Ptr &amp;keyFrame)</td></tr>
+<tr class="memdesc:a7f729ac56b6c80c6b01f7a8412a119e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除关键帧（满足时间连续，空间展开原则）  <br /></td></tr>
+<tr class="separator:a7f729ac56b6c80c6b01f7a8412a119e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04151fd332790407934761ddb7624229" id="r_a04151fd332790407934761ddb7624229"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMap.html#a04151fd332790407934761ddb7624229">cleanMap</a> ()</td></tr>
+<tr class="memdesc:a04151fd332790407934761ddb7624229"><td class="mdescLeft">&#160;</td><td class="mdescRight">在后端优化后，移除无用地图点  <br /></td></tr>
+<tr class="separator:a04151fd332790407934761ddb7624229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:aa0641b970c7de213516801d3ab7142d8" id="r_aa0641b970c7de213516801d3ab7142d8"><td class="memItemLeft" align="right" valign="top"><a id="aa0641b970c7de213516801d3ab7142d8" name="aa0641b970c7de213516801d3ab7142d8"></a>
+static Ptr&#160;</td><td class="memItemRight" valign="bottom"><b>getInstance</b> ()</td></tr>
+<tr class="separator:aa0641b970c7de213516801d3ab7142d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ad0d64115a386bce07aa182e1935f40b8" id="r_ad0d64115a386bce07aa182e1935f40b8"><td class="memItemLeft" align="right" valign="top"><a id="ad0d64115a386bce07aa182e1935f40b8" name="ad0d64115a386bce07aa182e1935f40b8"></a>
+EIGEN_MAKE_ALIGNED_OPERATOR_NEW typedef std::shared_ptr&lt; <a class="el" href="classMap.html">Map</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Ptr</b></td></tr>
+<tr class="separator:ad0d64115a386bce07aa182e1935f40b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493213f708b8771774b0aaf3465318b4" id="r_a493213f708b8771774b0aaf3465318b4"><td class="memItemLeft" align="right" valign="top"><a id="a493213f708b8771774b0aaf3465318b4" name="a493213f708b8771774b0aaf3465318b4"></a>
+std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_mutex</b></td></tr>
+<tr class="memdesc:a493213f708b8771774b0aaf3465318b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">地图锁，保证后端、前端和Viewer的线程安全 <br /></td></tr>
+<tr class="separator:a493213f708b8771774b0aaf3465318b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43d52a23f2a0380ad78119f1aec187c6" id="r_a43d52a23f2a0380ad78119f1aec187c6"><td class="memItemLeft" align="right" valign="top"><a id="a43d52a23f2a0380ad78119f1aec187c6" name="a43d52a23f2a0380ad78119f1aec187c6"></a>
+std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><b>m_cond</b></td></tr>
+<tr class="memdesc:a43d52a23f2a0380ad78119f1aec187c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">条件变量，保证后端优化效率 <br /></td></tr>
+<tr class="separator:a43d52a23f2a0380ad78119f1aec187c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b7907a7aa72220a63c7f66a168f524e" id="r_a9b7907a7aa72220a63c7f66a168f524e"><td class="memItemLeft" align="right" valign="top"><a id="a9b7907a7aa72220a63c7f66a168f524e" name="a9b7907a7aa72220a63c7f66a168f524e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isReady</b> = false</td></tr>
+<tr class="memdesc:a9b7907a7aa72220a63c7f66a168f524e"><td class="mdescLeft">&#160;</td><td class="mdescRight">搭配条件变量一起使 用 <br /></td></tr>
+<tr class="separator:a9b7907a7aa72220a63c7f66a168f524e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Map用作前端、展示和后端的交互中心（单例设计模式） </p>
+<dl class="section attention"><dt>注意</dt><dd>使用m_mutex和m_cond来保证Map的线程安全 </dd></dl>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a04151fd332790407934761ddb7624229" name="a04151fd332790407934761ddb7624229"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04151fd332790407934761ddb7624229">&#9670;&#160;</a></span>cleanMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Map::cleanMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在后端优化后，移除无用地图点 </p>
+<p>当没有Feature指向MapPoint时，删除MapPoint</p>
+<dl class="section note"><dt>注解</dt><dd>在异常点剔除之后使用（后端优化后） </dd></dl>
+
+</div>
+</div>
+<a id="aff42b7b2ef5614da322e5bc95f8d5811" name="aff42b7b2ef5614da322e5bc95f8d5811"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff42b7b2ef5614da322e5bc95f8d5811">&#9670;&#160;</a></span>insertKeyFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Map::insertKeyFrame </td>
+          <td>(</td>
+          <td class="paramtype">const Frame::Ptr &amp;&#160;</td>
+          <td class="paramname"><em>keyFrame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添加关键帧到Map中 </p>
+<p>完成m_frames、m_activeFrames和m_activePoints的初始化</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>待添加到Map中的关键帧 </p>
+
+</div>
+</div>
+<a id="a7f729ac56b6c80c6b01f7a8412a119e4" name="a7f729ac56b6c80c6b01f7a8412a119e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f729ac56b6c80c6b01f7a8412a119e4">&#9670;&#160;</a></span>removeOldFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Map::removeOldFrame </td>
+          <td>(</td>
+          <td class="paramtype">const Frame::Ptr &amp;&#160;</td>
+          <td class="paramname"><em>keyFrame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移除关键帧（满足时间连续，空间展开原则） </p>
+<dl class="section note"><dt>注解</dt><dd>保证激活的关键帧的位姿之间，时间连续，空间展开</dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/rookie-lu/Project/mlk-graph-slam/include/<a class="el" href="map_8h_source.html">map.h</a></li>
+<li>/home/rookie-lu/Project/mlk-graph-slam/src/<b>map.cc</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.15-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classMap.html">Map</a></li>
+  </ul>
+</div>
+</body>
+</html>

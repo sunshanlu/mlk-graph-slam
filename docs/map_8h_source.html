@@ -1,0 +1,272 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MLK-SLAM: /home/rookie-lu/Project/mlk-graph-slam/include/map.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygenextra.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="topbanner"><a href="https://github.com/crazyzlj/TutorialCppProject" title="TutorialCppProject by Liangjun Zhu"><i class="githublogo"></i></a></div>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('map_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">map.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="map_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="camera_8h.html">camera.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="common__include_8h.html">common_include.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="config_8h.html">config.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>NAMESPACE_BEGIN</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">struct </span><a class="code hl_struct" href="structMapPoint.html">MapPoint</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structFeature.html">   26</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structFeature.html">Feature</a> {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    EIGEN_MAKE_ALIGNED_OPERATOR_NEW</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">typedef</span> std::shared_ptr&lt;Feature&gt; Ptr;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structFeature.html#aa15ad546fcfe8b9d9de230502f34afe6">   35</a></span>    <span class="keyword">static</span> Ptr <a class="code hl_function" href="structFeature.html#aa15ad546fcfe8b9d9de230502f34afe6">create</a>() {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        Ptr feature(<span class="keyword">new</span> <a class="code hl_struct" href="structFeature.html">Feature</a>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">return</span> feature;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
+</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structFeature.html#a586b49397b28b54d7aafd51c4bff2b88">   40</a></span>    std::weak_ptr&lt;MapPoint&gt; <a class="code hl_variable" href="structFeature.html#a586b49397b28b54d7aafd51c4bff2b88">m_mapPoint</a>; </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="structFeature.html#aee8630f23a05af9642ce35dafeacad3a">   41</a></span>    Vec2d <a class="code hl_variable" href="structFeature.html#aee8630f23a05af9642ce35dafeacad3a">m_position</a>;                   </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>};</div>
+</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="};">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structMapPoint.html">   49</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structMapPoint.html">MapPoint</a> {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    EIGEN_MAKE_ALIGNED_OPERATOR_NEW</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">typedef</span> std::shared_ptr&lt;MapPoint&gt; Ptr;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="structMapPoint.html#a06a923baf83980bd8dee1c15e7ed19cb">   59</a></span>    <span class="keyword">static</span> Ptr <a class="code hl_function" href="structMapPoint.html#a06a923baf83980bd8dee1c15e7ed19cb">create</a>() {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keyword">static</span> std::size_t pointNum = 0;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        Ptr point(<span class="keyword">new</span> <a class="code hl_struct" href="structMapPoint.html">MapPoint</a>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        point-&gt;m_id = pointNum++;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">return</span> point;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
+</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="structMapPoint.html#a91cc0288cf43d2759a488a7aafe97c77">   66</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="structMapPoint.html#a91cc0288cf43d2759a488a7aafe97c77">m_isOutlier</a> = <span class="keyword">false</span>; </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="structMapPoint.html#ac2af4fa6a1cca0c4974f03432edf0ec0">   67</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structMapPoint.html#ac2af4fa6a1cca0c4974f03432edf0ec0">m_featureNum</a> = 0;     </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="structMapPoint.html#ab1bc72fc884fc015a6125839ee1d5160">   68</a></span>    std::size_t <a class="code hl_variable" href="structMapPoint.html#ab1bc72fc884fc015a6125839ee1d5160">m_id</a>;         </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="structMapPoint.html#a245a90852705f699c9467bc080ebcf1f">   69</a></span>    Vec3d <a class="code hl_variable" href="structMapPoint.html#a245a90852705f699c9467bc080ebcf1f">m_position</a>;         </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>};</div>
+</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="foldopen" id="foldopen00076" data-start="{" data-end="};">
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classFrame.html">   76</a></span><span class="keyword">class </span><a class="code hl_class" href="classFrame.html">Frame</a> {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    EIGEN_MAKE_ALIGNED_OPERATOR_NEW</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">typedef</span> std::shared_ptr&lt;Frame&gt; Ptr;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="foldopen" id="foldopen00087" data-start="{" data-end="}">
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classFrame.html#acfda04c9d323d0ac43c123ca875e7a9a">   87</a></span>    <a class="code hl_function" href="classFrame.html#acfda04c9d323d0ac43c123ca875e7a9a">Frame</a>(cv::Mat leftIMG, cv::Mat rightIMG)</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        : <a class="code hl_variable" href="classFrame.html#a73faac6fa1b4fbf016b30f80f54a3be4">m_leftIMG</a>(std::move(leftIMG))</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        , <a class="code hl_variable" href="classFrame.html#ac21582dd55dbdd771b9cd6da06c766ac">m_rightIMG</a>(std::move(rightIMG)) {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keyword">static</span> std::size_t frameNum = 0;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <a class="code hl_variable" href="classFrame.html#a29f6cd157bec7d4c4c27e3b2882e573f">m_id</a> = frameNum++;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
+</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    std::vector&lt;Feature::Ptr&gt; &amp;getLeftFeatures() { <span class="keywordflow">return</span> m_leftFeatures; }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    std::vector&lt;Feature::Ptr&gt; &amp;getRightFeatures() { <span class="keywordflow">return</span> m_rightFeatures; }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classFrame.html#a1425c615822c049a15d2173fb01b2431">initKeyFrame</a>(<span class="keyword">const</span> Camera::Ptr &amp;camera);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code hl_function" href="classFrame.html#a2bff94f308fbc6d604d72fc8a21ceafb">distance</a>(<span class="keyword">const</span> <a class="code hl_class" href="classFrame.html">Frame</a> &amp;left, <span class="keyword">const</span> <a class="code hl_class" href="classFrame.html">Frame</a> &amp;right);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    SE3d &amp;pose() { <span class="keywordflow">return</span> m_pose; }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keyword">const</span> SE3d &amp;pose()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_pose; }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    std::vector&lt;Feature::Ptr&gt; m_leftFeatures;  </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    std::vector&lt;Feature::Ptr&gt; m_rightFeatures; </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    SE3d m_pose;                               </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="classFrame.html#a150e4523a2115fc0208cc8460f1c58ca">  110</a></span>    std::size_t <a class="code hl_variable" href="classFrame.html#a150e4523a2115fc0208cc8460f1c58ca">m_keyID</a> = -1;  </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="classFrame.html#a29f6cd157bec7d4c4c27e3b2882e573f">  111</a></span>    std::size_t <a class="code hl_variable" href="classFrame.html#a29f6cd157bec7d4c4c27e3b2882e573f">m_id</a>;          </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="classFrame.html#a73faac6fa1b4fbf016b30f80f54a3be4">  112</a></span>    cv::Mat <a class="code hl_variable" href="classFrame.html#a73faac6fa1b4fbf016b30f80f54a3be4">m_leftIMG</a>;         </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="classFrame.html#ac21582dd55dbdd771b9cd6da06c766ac">  113</a></span>    cv::Mat <a class="code hl_variable" href="classFrame.html#ac21582dd55dbdd771b9cd6da06c766ac">m_rightIMG</a>;        </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="classFrame.html#a67a4995aa6947bde515221ff96349501">  114</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classFrame.html#a67a4995aa6947bde515221ff96349501">m_isKeyFrame</a> = <span class="keyword">false</span>; </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>};</div>
+</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="foldopen" id="foldopen00121" data-start="{" data-end="};">
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="classMap.html">  121</a></span><span class="keyword">class </span><a class="code hl_class" href="classMap.html">Map</a> {</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    EIGEN_MAKE_ALIGNED_OPERATOR_NEW</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keyword">typedef</span> std::shared_ptr&lt;Map&gt; Ptr;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keyword">typedef</span> std::unordered_map&lt;std::size_t, Frame::Ptr&gt; FramesType;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keyword">typedef</span> std::unordered_map&lt;std::size_t, MapPoint::Ptr&gt; PointsType;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <a class="code hl_class" href="classMap.html">Map</a>(<span class="keyword">const</span> <a class="code hl_class" href="classMap.html">Map</a> &amp;other) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <a class="code hl_class" href="classMap.html">Map</a> &amp;operator=(<span class="keyword">const</span> <a class="code hl_class" href="classMap.html">Map</a> &amp;other) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordtype">void</span> insertMapPoints(<span class="keyword">const</span> std::vector&lt;MapPoint::Ptr&gt; &amp;mapPoints) {</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;point : mapPoints)</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            m_points.insert(std::make_pair(point-&gt;m_id, point));</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classMap.html#aff42b7b2ef5614da322e5bc95f8d5811">insertKeyFrame</a>(<span class="keyword">const</span> Frame::Ptr &amp;keyFrame);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keyword">static</span> Ptr getInstance() {</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        <span class="keyword">static</span> Ptr map(<span class="keyword">new</span> <a class="code hl_class" href="classMap.html">Map</a>);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="keywordflow">return</span> map;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    }</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="classMap.html#a1691a86a0d643207dac25fb935260a11">  152</a></span>    FramesType &amp;<a class="code hl_function" href="classMap.html#a1691a86a0d643207dac25fb935260a11">getActiveFrames</a>() { <span class="keywordflow">return</span> m_activeFrames; }</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="classMap.html#aca985b0fd1df002de4b3eb729aae5cf2">  155</a></span>    PointsType &amp;<a class="code hl_function" href="classMap.html#aca985b0fd1df002de4b3eb729aae5cf2">getActivePoints</a>() { <span class="keywordflow">return</span> m_activePoints; }</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="classMap.html#aac26b8894f259299c5894f729bdb5d88">  158</a></span>    FramesType &amp;<a class="code hl_function" href="classMap.html#aac26b8894f259299c5894f729bdb5d88">getAllFrames</a>() { <span class="keywordflow">return</span> m_frames; }</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="classMap.html#ae1e21fa436456acc114c55bfae940b69">  161</a></span>    PointsType &amp;<a class="code hl_function" href="classMap.html#ae1e21fa436456acc114c55bfae940b69">getAllPoints</a>() { <span class="keywordflow">return</span> m_points; }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classMap.html#a7f729ac56b6c80c6b01f7a8412a119e4">removeOldFrame</a>(<span class="keyword">const</span> Frame::Ptr &amp;keyFrame);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classMap.html#a04151fd332790407934761ddb7624229">cleanMap</a>();</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <a class="code hl_class" href="classMap.html">Map</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    FramesType m_frames;       </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    PointsType m_points;       </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    FramesType m_activeFrames; </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    PointsType m_activePoints; </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="classMap.html#a493213f708b8771774b0aaf3465318b4">  177</a></span>    std::mutex <a class="code hl_variable" href="classMap.html#a493213f708b8771774b0aaf3465318b4">m_mutex</a>;             </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="classMap.html#a43d52a23f2a0380ad78119f1aec187c6">  178</a></span>    std::condition_variable <a class="code hl_variable" href="classMap.html#a43d52a23f2a0380ad78119f1aec187c6">m_cond</a>; </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="classMap.html#a9b7907a7aa72220a63c7f66a168f524e">  179</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classMap.html#a9b7907a7aa72220a63c7f66a168f524e">m_isReady</a> = <span class="keyword">false</span>;         </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>};</div>
+</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>NAMESPACE_END</div>
+<div class="ttc" id="acamera_8h_html"><div class="ttname"><a href="camera_8h.html">camera.h</a></div><div class="ttdoc">定义Camera相机类</div></div>
+<div class="ttc" id="aclassFrame_html"><div class="ttname"><a href="classFrame.html">Frame</a></div><div class="ttdoc">Frame维护了一帧内的信息</div><div class="ttdef"><b>Definition</b> map.h:76</div></div>
+<div class="ttc" id="aclassFrame_html_a1425c615822c049a15d2173fb01b2431"><div class="ttname"><a href="classFrame.html#a1425c615822c049a15d2173fb01b2431">Frame::initKeyFrame</a></div><div class="ttdeci">int initKeyFrame(const Camera::Ptr &amp;camera)</div><div class="ttdoc">设定关键帧，并进行特征检测、匹配</div><div class="ttdef"><b>Definition</b> map.cc:14</div></div>
+<div class="ttc" id="aclassFrame_html_a150e4523a2115fc0208cc8460f1c58ca"><div class="ttname"><a href="classFrame.html#a150e4523a2115fc0208cc8460f1c58ca">Frame::m_keyID</a></div><div class="ttdeci">std::size_t m_keyID</div><div class="ttdoc">关键帧id，如果fram是关键帧</div><div class="ttdef"><b>Definition</b> map.h:110</div></div>
+<div class="ttc" id="aclassFrame_html_a29f6cd157bec7d4c4c27e3b2882e573f"><div class="ttname"><a href="classFrame.html#a29f6cd157bec7d4c4c27e3b2882e573f">Frame::m_id</a></div><div class="ttdeci">std::size_t m_id</div><div class="ttdoc">索引（唯一）</div><div class="ttdef"><b>Definition</b> map.h:111</div></div>
+<div class="ttc" id="aclassFrame_html_a2bff94f308fbc6d604d72fc8a21ceafb"><div class="ttname"><a href="classFrame.html#a2bff94f308fbc6d604d72fc8a21ceafb">Frame::distance</a></div><div class="ttdeci">static double distance(const Frame &amp;left, const Frame &amp;right)</div><div class="ttdoc">计算两个位姿之间的距离，以left为参考</div><div class="ttdef"><b>Definition</b> map.cc:89</div></div>
+<div class="ttc" id="aclassFrame_html_a67a4995aa6947bde515221ff96349501"><div class="ttname"><a href="classFrame.html#a67a4995aa6947bde515221ff96349501">Frame::m_isKeyFrame</a></div><div class="ttdeci">bool m_isKeyFrame</div><div class="ttdoc">关键帧标识</div><div class="ttdef"><b>Definition</b> map.h:114</div></div>
+<div class="ttc" id="aclassFrame_html_a73faac6fa1b4fbf016b30f80f54a3be4"><div class="ttname"><a href="classFrame.html#a73faac6fa1b4fbf016b30f80f54a3be4">Frame::m_leftIMG</a></div><div class="ttdeci">cv::Mat m_leftIMG</div><div class="ttdoc">左图</div><div class="ttdef"><b>Definition</b> map.h:112</div></div>
+<div class="ttc" id="aclassFrame_html_ac21582dd55dbdd771b9cd6da06c766ac"><div class="ttname"><a href="classFrame.html#ac21582dd55dbdd771b9cd6da06c766ac">Frame::m_rightIMG</a></div><div class="ttdeci">cv::Mat m_rightIMG</div><div class="ttdoc">右图</div><div class="ttdef"><b>Definition</b> map.h:113</div></div>
+<div class="ttc" id="aclassFrame_html_acfda04c9d323d0ac43c123ca875e7a9a"><div class="ttname"><a href="classFrame.html#acfda04c9d323d0ac43c123ca875e7a9a">Frame::Frame</a></div><div class="ttdeci">Frame(cv::Mat leftIMG, cv::Mat rightIMG)</div><div class="ttdoc">Frame只提供左右图的构造方式</div><div class="ttdef"><b>Definition</b> map.h:87</div></div>
+<div class="ttc" id="aclassMap_html"><div class="ttname"><a href="classMap.html">Map</a></div><div class="ttdoc">Map用作前端、展示和后端的交互中心（单例设计模式）</div><div class="ttdef"><b>Definition</b> map.h:121</div></div>
+<div class="ttc" id="aclassMap_html_a04151fd332790407934761ddb7624229"><div class="ttname"><a href="classMap.html#a04151fd332790407934761ddb7624229">Map::cleanMap</a></div><div class="ttdeci">void cleanMap()</div><div class="ttdoc">在后端优化后，移除无用地图点</div><div class="ttdef"><b>Definition</b> map.cc:131</div></div>
+<div class="ttc" id="aclassMap_html_a1691a86a0d643207dac25fb935260a11"><div class="ttname"><a href="classMap.html#a1691a86a0d643207dac25fb935260a11">Map::getActiveFrames</a></div><div class="ttdeci">FramesType &amp; getActiveFrames()</div><div class="ttdoc">获取激活关键帧</div><div class="ttdef"><b>Definition</b> map.h:152</div></div>
+<div class="ttc" id="aclassMap_html_a43d52a23f2a0380ad78119f1aec187c6"><div class="ttname"><a href="classMap.html#a43d52a23f2a0380ad78119f1aec187c6">Map::m_cond</a></div><div class="ttdeci">std::condition_variable m_cond</div><div class="ttdoc">条件变量，保证后端优化效率</div><div class="ttdef"><b>Definition</b> map.h:178</div></div>
+<div class="ttc" id="aclassMap_html_a493213f708b8771774b0aaf3465318b4"><div class="ttname"><a href="classMap.html#a493213f708b8771774b0aaf3465318b4">Map::m_mutex</a></div><div class="ttdeci">std::mutex m_mutex</div><div class="ttdoc">地图锁，保证后端、前端和Viewer的线程安全</div><div class="ttdef"><b>Definition</b> map.h:177</div></div>
+<div class="ttc" id="aclassMap_html_a7f729ac56b6c80c6b01f7a8412a119e4"><div class="ttname"><a href="classMap.html#a7f729ac56b6c80c6b01f7a8412a119e4">Map::removeOldFrame</a></div><div class="ttdeci">void removeOldFrame(const Frame::Ptr &amp;keyFrame)</div><div class="ttdoc">移除关键帧（满足时间连续，空间展开原则）</div><div class="ttdef"><b>Definition</b> map.cc:95</div></div>
+<div class="ttc" id="aclassMap_html_a9b7907a7aa72220a63c7f66a168f524e"><div class="ttname"><a href="classMap.html#a9b7907a7aa72220a63c7f66a168f524e">Map::m_isReady</a></div><div class="ttdeci">bool m_isReady</div><div class="ttdoc">搭配条件变量一起使 用</div><div class="ttdef"><b>Definition</b> map.h:179</div></div>
+<div class="ttc" id="aclassMap_html_aac26b8894f259299c5894f729bdb5d88"><div class="ttname"><a href="classMap.html#aac26b8894f259299c5894f729bdb5d88">Map::getAllFrames</a></div><div class="ttdeci">FramesType &amp; getAllFrames()</div><div class="ttdoc">获取地图中所有关键帧</div><div class="ttdef"><b>Definition</b> map.h:158</div></div>
+<div class="ttc" id="aclassMap_html_aca985b0fd1df002de4b3eb729aae5cf2"><div class="ttname"><a href="classMap.html#aca985b0fd1df002de4b3eb729aae5cf2">Map::getActivePoints</a></div><div class="ttdeci">PointsType &amp; getActivePoints()</div><div class="ttdoc">获取激活地图点</div><div class="ttdef"><b>Definition</b> map.h:155</div></div>
+<div class="ttc" id="aclassMap_html_ae1e21fa436456acc114c55bfae940b69"><div class="ttname"><a href="classMap.html#ae1e21fa436456acc114c55bfae940b69">Map::getAllPoints</a></div><div class="ttdeci">PointsType &amp; getAllPoints()</div><div class="ttdoc">获取地图中所有地图点</div><div class="ttdef"><b>Definition</b> map.h:161</div></div>
+<div class="ttc" id="aclassMap_html_aff42b7b2ef5614da322e5bc95f8d5811"><div class="ttname"><a href="classMap.html#aff42b7b2ef5614da322e5bc95f8d5811">Map::insertKeyFrame</a></div><div class="ttdeci">void insertKeyFrame(const Frame::Ptr &amp;keyFrame)</div><div class="ttdoc">添加关键帧到Map中</div><div class="ttdef"><b>Definition</b> map.cc:146</div></div>
+<div class="ttc" id="acommon__include_8h_html"><div class="ttname"><a href="common__include_8h.html">common_include.h</a></div><div class="ttdoc">引入所有所需头文件，定义所有所需超参数</div></div>
+<div class="ttc" id="aconfig_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div><div class="ttdoc">编写slam系统的超参数信息类</div></div>
+<div class="ttc" id="astructFeature_html"><div class="ttname"><a href="structFeature.html">Feature</a></div><div class="ttdoc">Feature维护了帧的特征点信息</div><div class="ttdef"><b>Definition</b> map.h:26</div></div>
+<div class="ttc" id="astructFeature_html_a586b49397b28b54d7aafd51c4bff2b88"><div class="ttname"><a href="structFeature.html#a586b49397b28b54d7aafd51c4bff2b88">Feature::m_mapPoint</a></div><div class="ttdeci">std::weak_ptr&lt; MapPoint &gt; m_mapPoint</div><div class="ttdoc">维护的MapPoint的weak_ptr</div><div class="ttdef"><b>Definition</b> map.h:40</div></div>
+<div class="ttc" id="astructFeature_html_aa15ad546fcfe8b9d9de230502f34afe6"><div class="ttname"><a href="structFeature.html#aa15ad546fcfe8b9d9de230502f34afe6">Feature::create</a></div><div class="ttdeci">static Ptr create()</div><div class="ttdoc">Frame的简单工厂设计模式</div><div class="ttdef"><b>Definition</b> map.h:35</div></div>
+<div class="ttc" id="astructFeature_html_aee8630f23a05af9642ce35dafeacad3a"><div class="ttname"><a href="structFeature.html#aee8630f23a05af9642ce35dafeacad3a">Feature::m_position</a></div><div class="ttdeci">Vec2d m_position</div><div class="ttdoc">维护了像素坐标系下的位置信息</div><div class="ttdef"><b>Definition</b> map.h:41</div></div>
+<div class="ttc" id="astructMapPoint_html"><div class="ttname"><a href="structMapPoint.html">MapPoint</a></div><div class="ttdoc">MapPoint为地图点</div><div class="ttdef"><b>Definition</b> map.h:49</div></div>
+<div class="ttc" id="astructMapPoint_html_a06a923baf83980bd8dee1c15e7ed19cb"><div class="ttname"><a href="structMapPoint.html#a06a923baf83980bd8dee1c15e7ed19cb">MapPoint::create</a></div><div class="ttdeci">static Ptr create()</div><div class="ttdoc">MapPoint的简单工厂设计模式</div><div class="ttdef"><b>Definition</b> map.h:59</div></div>
+<div class="ttc" id="astructMapPoint_html_a245a90852705f699c9467bc080ebcf1f"><div class="ttname"><a href="structMapPoint.html#a245a90852705f699c9467bc080ebcf1f">MapPoint::m_position</a></div><div class="ttdeci">Vec3d m_position</div><div class="ttdoc">世界坐标系上位置信息</div><div class="ttdef"><b>Definition</b> map.h:69</div></div>
+<div class="ttc" id="astructMapPoint_html_a91cc0288cf43d2759a488a7aafe97c77"><div class="ttname"><a href="structMapPoint.html#a91cc0288cf43d2759a488a7aafe97c77">MapPoint::m_isOutlier</a></div><div class="ttdeci">bool m_isOutlier</div><div class="ttdoc">outlier标识</div><div class="ttdef"><b>Definition</b> map.h:66</div></div>
+<div class="ttc" id="astructMapPoint_html_ab1bc72fc884fc015a6125839ee1d5160"><div class="ttname"><a href="structMapPoint.html#ab1bc72fc884fc015a6125839ee1d5160">MapPoint::m_id</a></div><div class="ttdeci">std::size_t m_id</div><div class="ttdoc">唯一的id信息</div><div class="ttdef"><b>Definition</b> map.h:68</div></div>
+<div class="ttc" id="astructMapPoint_html_ac2af4fa6a1cca0c4974f03432edf0ec0"><div class="ttname"><a href="structMapPoint.html#ac2af4fa6a1cca0c4974f03432edf0ec0">MapPoint::m_featureNum</a></div><div class="ttdeci">int m_featureNum</div><div class="ttdoc">维护由**关键帧**指向地图点的Feature</div><div class="ttdef"><b>Definition</b> map.h:67</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.15-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="map_8h.html">map.h</a></li>
+  </ul>
+</div>
+</body>
+</html>
