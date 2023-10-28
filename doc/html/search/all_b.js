@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['keyframe_5fdistance_5fth_0',['keyframe_distance_th',['../class_config.html#abc5f1ce1c9c87d836a288b5335a2d131',1,'Config::KEYFRAME_DISTANCE_TH'],['../json__test_8cc.html#a2b907f4825e73d712c9011c20babd559',1,'KEYFRAME_DISTANCE_TH:&#160;json_test.cc']]],
-  ['kitti_5fpath_1',['kitti_path',['../class_config.html#a41a38f89eaa8fd2791179ccfaeee40c2',1,'Config::KITTI_PATH'],['../json__test_8cc.html#abe98f0f04e0f5bad5579c438df6a4d3d',1,'KITTI_PATH:&#160;json_test.cc']]],
-  ['kittiset_2',['KITTISet',['../class_k_i_t_t_i_set.html',1,'']]],
-  ['kittiset_5ftest_2ecc_3',['kittiset_test.cc',['../kittiset__test_8cc.html',1,'']]]
+  ['optimize_0',['optimize',['../classBackend.html#a3771848ad1773d4e5c14238578fb0c08',1,'Backend']]],
+  ['optimize_5fiterations_1',['OPTIMIZE_ITERATIONS',['../classConfig.html#a90a541cac51d5520aa55ded0da0eaa96',1,'Config']]],
+  ['outlier_5fdetect_5fiterations_2',['OUTLIER_DETECT_ITERATIONS',['../classConfig.html#a45046745bc4e701115a024fddd22a27c',1,'Config']]]
 ];

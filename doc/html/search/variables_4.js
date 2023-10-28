@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['feature_5fcolor_0',['feature_color',['../class_config.html#a07ea754b9ca925df0a9ac8506ca66e54',1,'Config::FEATURE_COLOR'],['../json__test_8cc.html#a58d82bb2735a0c81be9b5526b97aaaf9',1,'FEATURE_COLOR:&#160;json_test.cc']]]
+  ['keyframe_5fdistance_5fth_0',['KEYFRAME_DISTANCE_TH',['../classConfig.html#abc5f1ce1c9c87d836a288b5335a2d131',1,'Config']]],
+  ['kitti_5fpath_1',['KITTI_PATH',['../classConfig.html#a41a38f89eaa8fd2791179ccfaeee40c2',1,'Config']]]
 ];

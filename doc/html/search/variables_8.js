@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['line_5fwidth_0',['line_width',['../class_config.html#a791a1b1bf70bc966508fb32efb2dccfb',1,'Config::LINE_WIDTH'],['../json__test_8cc.html#a22ab3ee70990bac86d9efddd7b36e1af',1,'LINE_WIDTH:&#160;json_test.cc']]]
+  ['track_5fbad_5fth_0',['TRACK_BAD_TH',['../classConfig.html#ac448b489b75347de6ede48bef9a19645',1,'Config']]],
+  ['track_5fgood_5fth_1',['TRACK_GOOD_TH',['../classConfig.html#a8bfc3472852a6ccb815cdf1f834e6a0f',1,'Config']]]
 ];

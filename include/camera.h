@@ -4,9 +4,9 @@
  * @author      rookie-lu (ssl2001@126.com)
  * @version     1.0
  * @date        Oct-28-2023
- * 
+ *
  * @copyright   Copyright (c) 2023 rookie-lu
- * 
+ *
  */
 
 #pragma once
@@ -35,9 +35,9 @@ public:
     }
 
 public:
-    double m_baseline;         /// 初始状态相机与世界坐标系的位姿Tcw(0)
-    Mat3d m_K;                 /// 相机的内参矩阵K
-    std::vector<SE3d> m_poses; /// Tc1w Tc2w
+    double m_baseline;         ///< 初始状态相机与世界坐标系的位姿Tcw(0)
+    Mat3d m_K;                 ///< 相机的内参矩阵K
+    std::vector<SE3d> m_poses; ///< Tc1w Tc2w
 };
 
 NAMESPACE_END

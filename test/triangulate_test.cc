@@ -1,5 +1,6 @@
 #include "common_include.h"
 #include "frontend.h"
+#include "config.h"
 
 typedef Sophus::SE3d SE3;
 typedef Eigen::Vector3d Vec3;
@@ -28,6 +29,7 @@ bool triangulation(const std::vector<SE3> &poses, const std::vector<Vec3> points
 }
 
 int main() {
+    Config::loadConfig();
     std::vector<SE3> poses;
     std::vector<Vec3> normPoints;
     std::vector<Vec2d> pixelPoints;

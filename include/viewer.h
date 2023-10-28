@@ -12,8 +12,8 @@
 
 #include "camera.h"
 #include "common_include.h"
-#include "map.h"
 #include "config.h"
+#include "map.h"
 
 NAMESPACE_BEGIN
 
@@ -79,12 +79,12 @@ public:
 
 private:
     Viewer() = default;
-    Map::Ptr m_map;        /// 地图，用来提供激活地图点和激活关键帧
-    Camera::Ptr m_camera;  /// 相机，用来提供相机位姿
-    std::mutex m_mutex;    /// Viewer的互斥量维护m_frame的线程安全
-    Frame::Ptr m_frame;    /// 前端刚刚完成位姿估计的那一帧
-    PointsType m_points;   /// 需要绘制的地图点信息
-    bool m_isStop = false; /// 展示线程结束标识符
+    Map::Ptr m_map;        ///< 地图，用来提供激活地图点和激活关键帧
+    Camera::Ptr m_camera;  ///< 相机，用来提供相机位姿
+    std::mutex m_mutex;    ///< Viewer的互斥量维护m_frame的线程安全
+    Frame::Ptr m_frame;    ///< 前端刚刚完成位姿估计的那一帧
+    PointsType m_points;   ///< 需要绘制的地图点信息
+    bool m_isStop = false; ///< 展示线程结束标识符
 };
 
 NAMESPACE_END

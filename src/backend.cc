@@ -28,7 +28,7 @@ void Backend::optimize(std::unique_lock<std::mutex> &lck) {
     SPDLOG_INFO("后端优化完成，inliner数目占比为{}", ret);
 
     setOptValue(poseVertexes, pointVertexes);
-    m_viewer->updatePoints(std::move(points)); // todo 注释这里可以看点是否会发生变化
+    m_viewer->updatePoints(std::move(points));
 }
 
 /**

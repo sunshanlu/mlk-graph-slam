@@ -1,14 +1,4 @@
 var searchData=
 [
-  ['include_5fdirectories_0',['include_directories',['../_c_make_lists_8txt.html#ad12e3e523cab597a52cc49b4988234c9',1,'include_directories(&quot;/usr/include/eigen3&quot;) list(APPEND CMAKE_MODULE_PATH &quot;$:&#160;CMakeLists.txt'],['../test_2_c_make_lists_8txt.html#a0adb143362d859caa9998ed8fd066a73',1,'include_directories(&quot;/usr/include/eigen3&quot; &quot;${PROJECT_SOURCE_DIR}/include&quot;) add_executable(eigen_block_test &quot;$:&#160;CMakeLists.txt']]],
-  ['info_5farch_1',['info_arch',['../3_827_87_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a59647e99d304ed33b15cb284c27ed391',1,'info_arch:&#160;CMakeCXXCompilerId.cpp'],['../3_828_80-rc1_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a59647e99d304ed33b15cb284c27ed391',1,'info_arch:&#160;CMakeCXXCompilerId.cpp']]],
-  ['info_5fcompiler_2',['info_compiler',['../3_827_87_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a4b0efeb7a5d59313986b3a0390f050f6',1,'info_compiler:&#160;CMakeCXXCompilerId.cpp'],['../3_828_80-rc1_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a4b0efeb7a5d59313986b3a0390f050f6',1,'info_compiler:&#160;CMakeCXXCompilerId.cpp']]],
-  ['info_5flanguage_5fextensions_5fdefault_3',['info_language_extensions_default',['../3_827_87_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a0f46a8a39e09d9b803c4766904fd7e99',1,'info_language_extensions_default:&#160;CMakeCXXCompilerId.cpp'],['../3_828_80-rc1_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a0f46a8a39e09d9b803c4766904fd7e99',1,'info_language_extensions_default:&#160;CMakeCXXCompilerId.cpp']]],
-  ['info_5flanguage_5fstandard_5fdefault_4',['info_language_standard_default',['../3_828_80-rc1_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a4607cccf070750927b458473ca82c090',1,'info_language_standard_default:&#160;CMakeCXXCompilerId.cpp'],['../3_827_87_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a4607cccf070750927b458473ca82c090',1,'info_language_standard_default:&#160;CMakeCXXCompilerId.cpp']]],
-  ['info_5fplatform_5',['info_platform',['../3_828_80-rc1_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a2321403dee54ee23f0c2fa849c60f7d4',1,'info_platform:&#160;CMakeCXXCompilerId.cpp'],['../3_827_87_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a2321403dee54ee23f0c2fa849c60f7d4',1,'info_platform:&#160;CMakeCXXCompilerId.cpp']]],
-  ['init_5ftracking_6',['INIT_TRACKING',['../frontend_8h.html#aba2ff8299053dbaf8792854cb2986032a75ce2356f6156c3001f461db6b2624e5',1,'frontend.h']]],
-  ['initkeyframe_7',['initKeyFrame',['../class_frame.html#a1425c615822c049a15d2173fb01b2431',1,'Frame']]],
-  ['inittrack_8',['initTrack',['../class_frontend.html#a9faabf3a14152ae0ffe1a1746d471743',1,'Frontend']]],
-  ['insertkeyframe_9',['insertKeyFrame',['../class_map.html#aff42b7b2ef5614da322e5bc95f8d5811',1,'Map']]],
-  ['insertmappoints_10',['insertMapPoints',['../class_map.html#ac730e7ff2aac962c2aad28166a8a16c2',1,'Map']]]
+  ['line_5fwidth_0',['LINE_WIDTH',['../classConfig.html#a791a1b1bf70bc966508fb32efb2dccfb',1,'Config']]]
 ];

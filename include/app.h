@@ -49,12 +49,12 @@ private:
      */
     Application();
 
-    Frontend::Ptr m_frontend; /// 前端
-    Backend::Ptr m_backend;   /// 后端
-    Viewer::Ptr m_viewer;     /// 展示
-    Map::Ptr m_map;           /// 地图
-    Dataset::Ptr m_dataset;   /// 数据集
-    Camera::Ptr m_camera;     /// 相机
+    Frontend::Ptr m_frontend; ///< 前端
+    Backend::Ptr m_backend;   ///< 后端
+    Viewer::Ptr m_viewer;     ///< 展示
+    Map::Ptr m_map;           ///< 地图
+    Dataset::Ptr m_dataset;   ///< 数据集
+    Camera::Ptr m_camera;     ///< 相机
 };
 
 NAMESPACE_END

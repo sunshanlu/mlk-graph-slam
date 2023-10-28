@@ -1,8 +1,11 @@
+#include "config.h"
 #include "frontend.h"
+
 #include <thread>
 
 using namespace myslam;
 int main() {
+    Config::loadConfig();
     Dataset::Ptr dataset = KITTISet::getInstance();
     Camera::Ptr camera = dataset->createCamera();
     Map::Ptr map = Map::getInstance();

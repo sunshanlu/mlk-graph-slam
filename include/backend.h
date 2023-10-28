@@ -63,10 +63,10 @@ public:
 
 private:
     Backend() = default;
-    Map::Ptr m_map;        /// 地图
-    Camera::Ptr m_camera;  /// 相机，保存内参
-    Viewer::Ptr m_viewer;  /// 全局展示对象
-    bool m_isStop = false; /// 后端停止标识
+    Map::Ptr m_map;        ///< 地图
+    Camera::Ptr m_camera;  ///< 相机，保存内参
+    Viewer::Ptr m_viewer;  ///< 全局展示对象
+    bool m_isStop = false; ///< 后端停止标识
 };
 
 NAMESPACE_END

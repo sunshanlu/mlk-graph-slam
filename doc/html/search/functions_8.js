@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['linearizeoplus_0',['linearizeoplus',['../class_pose_edge.html#abc01116d132b590e1ab89956624497d0',1,'PoseEdge::linearizeOplus()'],['../class_pose_point_edge.html#a1d44c27bd1671b00238deacb9d78d525',1,'PosePointEdge::linearizeOplus()']]],
-  ['loadconfig_1',['loadConfig',['../class_config.html#a8c66e9cc54880d818dcf0b599e008426',1,'Config']]]
+  ['removeoldframe_0',['removeOldFrame',['../classMap.html#a7f729ac56b6c80c6b01f7a8412a119e4',1,'Map']]],
+  ['run_1',['run',['../classApplication.html#a68965449404743bf1add056784d6cf81',1,'Application::run()'],['../classBackend.html#a6c85ce904a1fbca7d2a830d6c78a3ac4',1,'Backend::run()'],['../classFrontend.html#a6296646bad503244ad460cc8e93582b8',1,'Frontend::run()']]]
 ];

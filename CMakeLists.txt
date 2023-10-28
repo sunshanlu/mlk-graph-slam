@@ -39,7 +39,7 @@ target_include_directories(
 target_link_libraries(
         ${DEPEND_LIBS}
         INTERFACE ${OpenCV_LIBS}
-        INTERFACE Sophus::Sophus
+        INTERFACE ${Sophus_LIBRARIES}
         INTERFACE ${Pangolin_LIBRARIES}
         # INTERFACE fmt::fmt
         INTERFACE spdlog::spdlog

@@ -121,12 +121,12 @@ void Map::removeOldFrame(const Frame::Ptr &keyFrame) {
     else
         frameRemove = m_activeFrames.at(maxValId);
     m_activeFrames.erase(frameRemove->m_keyID);
-    fmt::print("删除的关键帧的keyID为: {:06}\n", frameRemove->m_keyID);
+    SPDLOG_INFO("删除的关键帧的keyID为: {:06}\n", frameRemove->m_keyID);
 }
 
 /**
- * @brief           当没有Feature指向MapPoint时，删除MapPoint
- * @note            在异常点剔除之后使用（后端优化后）
+ * @brief 当没有Feature指向MapPoint时，删除MapPoint
+ * @note  在异常点剔除之后使用（后端优化后）
  */
 void Map::cleanMap() {
     std::vector<std::size_t> removeVec;
@@ -140,6 +140,25 @@ void Map::cleanMap() {
         auto iter = m_activePoints.find(idx);
         if (iter != m_activePoints.end())
             m_activePoints.erase(idx);
+    }
+}
+
+void Map::insertKeyFrame(const Frame::Ptr &keyFrame) {
+    assert(keyFrame->m_isKeyFrame == true);
+    m_frames.insert(std::make_pair(keyFrame->m_keyID, keyFrame));
+    if (m_activeFrames.size() == 7)
+        removeOldFrame(keyFrame);
+    m_activeFrames.insert(std::make_pair(keyFrame->m_keyID, keyFrame));
+
+    m_activePoints.clear();
+    for (auto &frame : m_activeFrames) {
+        auto &leftFeatures = frame.second->getLeftFeatures();
+        for (auto &feature : leftFeatures) {
+            auto mapPoint = feature->m_mapPoint.lock();
+            if (mapPoint == nullptr)
+                continue;
+            m_activePoints.insert(std::make_pair(mapPoint->m_id, mapPoint));
+        }
     }
 }
 

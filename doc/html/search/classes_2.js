@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['camera_0',['Camera',['../class_camera.html',1,'']]],
-  ['config_1',['Config',['../class_config.html',1,'']]]
+  ['camera_0',['Camera',['../classCamera.html',1,'']]],
+  ['config_1',['Config',['../classConfig.html',1,'']]]
 ];

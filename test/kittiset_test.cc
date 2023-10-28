@@ -1,11 +1,14 @@
 #include "camera.h"
 #include "dataset.h"
 #include "map.h"
+#include "config.h"
+
 #include <opencv2/opencv.hpp>
 
 using namespace myslam;
 
 int main() {
+    Config::loadConfig();
     Dataset::Ptr dataset = KITTISet::getInstance();
     Camera::Ptr camera = dataset->createCamera();
     Frame::Ptr frame = dataset->createFrame();

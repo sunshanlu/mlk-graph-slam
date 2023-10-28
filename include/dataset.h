@@ -11,8 +11,8 @@
 #pragma once
 #include "camera.h"
 #include "common_include.h"
-#include "map.h"
 #include "config.h"
+#include "map.h"
 
 NAMESPACE_BEGIN
 
@@ -64,7 +64,7 @@ public:
 
 private:
     KITTISet() = default;
-    std::size_t m_frameNum = 0;
+    std::size_t m_frameNum = 0; ///< 已经读取的帧的数目
 };
 
 NAMESPACE_END

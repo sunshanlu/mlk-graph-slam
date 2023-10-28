@@ -30,6 +30,10 @@ NAMESPACE_BEGIN
 enum class TrackStatus { INIT_TRACKING, TRACK_GOOD, TRACK_BAD, TRACK_LOST, TRACK_ERROR };
 void printPose(const SE3d &pose);
 
+/**
+ * @brief   进行相邻帧的位姿估计和局部稀疏地图构建
+ *
+ */
 class Frontend {
 public:
     EIGEN_MAKE_ALIGNED_OPERATOR_NEW
@@ -88,14 +92,14 @@ public:
 
 private:
     Frontend() = default;
-    Frame::Ptr m_refFrame;  /// 参考帧，左图提供待追踪的Feature
-    Frame::Ptr m_currFrame; /// 当前帧，参考参考帧进行Feature追踪
-    bool m_isStop = false;  /// 前端线程结束标识
-    Camera::Ptr m_camera;   /// 相机参数
-    Dataset::Ptr m_dataset; /// 数据集
-    Map::Ptr m_map;         /// 地图
-    SE3d m_diffPose;        /// 上次位姿估计的位姿差Tcr
-    Viewer::Ptr m_viewer;   /// 可视化
+    Frame::Ptr m_refFrame;  ///< 参考帧，左图提供待追踪的Feature
+    Frame::Ptr m_currFrame; ///< 当前帧，参考参考帧进行Feature追踪
+    bool m_isStop = false;  ///< 前端线程结束标识
+    Camera::Ptr m_camera;   ///< 相机参数
+    Dataset::Ptr m_dataset; ///< 数据集
+    Map::Ptr m_map;         ///< 地图
+    SE3d m_diffPose;        ///< 上次位姿估计的位姿差Tcr
+    Viewer::Ptr m_viewer;   ///< 可视化
     TrackStatus m_status = TrackStatus::INIT_TRACKING; /// 追踪状态
 };
 
