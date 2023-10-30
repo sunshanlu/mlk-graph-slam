@@ -1,0 +1,34 @@
+{
+    "name": "vcpkg-learn",
+    "version": "0.0.1",
+    "dependencies": [
+        "opencv3",
+        "sophus",
+        "fmt",
+        "pangolin",
+        "g2o",
+        "glog",
+        "gflags",
+        "spdlog",
+        "jsoncpp"
+    ],
+    "builtin-baseline": "06c79a9afa6f99f02f44d20df9e0848b2a56bf1b",
+    "overrides": [
+        {
+            "name": "opencv3",
+            "version": "3.4.16"
+        },
+        {
+            "name": "fmt",
+            "version": "8.1.0"
+        },
+        {
+            "name": "spdlog",
+            "version": "1.10.0"
+        },
+        {
+            "name": "jsoncpp",
+            "version": "1.9.5"
+        }
+    ]
+}

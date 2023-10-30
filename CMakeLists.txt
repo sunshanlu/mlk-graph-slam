@@ -2,18 +2,16 @@ cmake_minimum_required(VERSION 3.15)
 
 project(mlk-slam CXX)
 set(DEPEND_LIBS depend_libs)
-# set(CMAKE_BUILD_TYPE "Debug")
 set(CMAKE_BUILD_TYPE "Release")
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(PLATFORM "x64-linux") # 不同的平台需要进行修改
 
 add_subdirectory(test)
 
 include_directories("${PROJECT_SOURCE_DIR}/include")
 include_directories("/usr/include/eigen3")
 list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
-set(G2O_LIBS g2o_core g2o_stuff g2o_types_sba g2o_solver_csparse
-             g2o_csparse_extension)
 
 file(GLOB SRC_FILES "${PROJECT_SOURCE_DIR}/src/*.cc")
 
@@ -41,12 +39,13 @@ target_link_libraries(
         INTERFACE ${OpenCV_LIBS}
         INTERFACE ${Sophus_LIBRARIES}
         INTERFACE ${Pangolin_LIBRARIES}
-        # INTERFACE fmt::fmt
+        INTERFACE fmt::fmt-header-only
         INTERFACE spdlog::spdlog
-        INTERFACE ${G2O_LIBS}
+        INTERFACE ${G2O_LIBRARIES}
         INTERFACE ${GFLAGS_LIBRARIES}
         INTERFACE ${GLOG_LIBRARIES}
         INTERFACE PkgConfig::JSONCPP)
 
 add_executable(${PROJECT_NAME} ${SRC_FILES})
 target_link_libraries(${PROJECT_NAME} ${DEPEND_LIBS})
+
