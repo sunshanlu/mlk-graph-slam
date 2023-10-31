@@ -28,6 +28,9 @@
   - 使用更常用的json作为配置文件，而不是yml
   - 使用更轻量的spdlog作为日志输出库，而不是glog
 
+## 文档
+详细的项目api文档：<a>https://sunshanlu.github.io/mlk-graph-slam/</a>
+
 ## 依赖
 - [vcpkg install(可选)](https://github.com/microsoft/vcpkg)
 - [cmake 3.16+](https://cmake.org/)
