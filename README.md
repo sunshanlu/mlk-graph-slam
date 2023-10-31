@@ -38,7 +38,7 @@
 ## 数据集
 项目使用的是：[KITTI数据集](https://www.cvlibs.net/datasets/kitti/eval_odometry.php)，需下载如下图所示的数据集文件：
 <div align="center">
-    <img width=600 alt="KITTI_DATASET" src="./doc/imgs/kitti-dataset.png"/>
+    <img width=600 alt="KITTI_DATASET" src="https://raw.githubusercontent.com/sunshanlu/mlk-graph-slam/main/doc/imgs/kitti-dataset.png"/>
 </div>
 
 
