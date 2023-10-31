@@ -105,12 +105,17 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </li>
 </ul>
 <h1><a class="anchor" id="autotoc_md2"></a>
+文档</h1>
+<p>详细的项目api文档：<a href="https://sunshanlu.github.io/mlk-graph-slam/">https://sunshanlu.github.io/mlk-graph-slam/</a></p>
+<h1><a class="anchor" id="autotoc_md3"></a>
 依赖</h1>
 <ul>
 <li><a href="https://github.com/microsoft/vcpkg">vcpkg install(可选)</a></li>
 <li><a href="https://cmake.org/">cmake 3.16+</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md3"></a>
+<h1><a class="anchor" id="autotoc_md4"></a>
+数据集</h1>
+<p>项目使用的是：<a href="https://www.cvlibs.net/datasets/kitti/eval_odometry.php">KITTI数据集</a>，需下载如下图所示的数据集文件： </p><div align="center"> <img src="https://raw.githubusercontent.com/sunshanlu/mlk-graph-slam/main/doc/imgs/kitti-dataset.png" alt="KITTI_DATASET" width="600" class="inline"/> </div><h1><a class="anchor" id="autotoc_md5"></a>
 安装</h1>
 <p>文档提供两种安装项目依赖的方式</p><ul>
 <li>通过vcpkg包管理工具安装（推荐）</li>
@@ -135,7 +140,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="line">cmake ..</div>
 <div class="line">buildsystems/vcpkg.cmake&quot;</div>
 <div class="line">cmake --build . -j10</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md6"></a>
 运行</h1>
 <p>配置文件config.json中的变量含义如下： </p><div class="fragment"><div class="line"># config/config.json</div>
 <div class="line">KITTI_PATH                    KITTI数据集地址</div>
@@ -159,7 +164,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <li>其他参数可以保持不变，也可以根据你的理解自行修改</li>
 <li>运行<code>build/mlk-slam</code>可执行文件即可</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md5"></a>
+<h1><a class="anchor" id="autotoc_md7"></a>
 LICENSE</h1>
 <p>该项目的代码是根据<a href="./LICENSE">MIT License</a>许可证授权的。如需引用，请说明出处。 </p>
 </div></div><!-- PageDoc -->

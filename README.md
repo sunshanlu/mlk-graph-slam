@@ -28,9 +28,19 @@
   - 使用更常用的json作为配置文件，而不是yml
   - 使用更轻量的spdlog作为日志输出库，而不是glog
 
+## 文档
+详细的项目api文档：<a>https://sunshanlu.github.io/mlk-graph-slam/</a>
+
 ## 依赖
 - [vcpkg install(可选)](https://github.com/microsoft/vcpkg)
 - [cmake 3.16+](https://cmake.org/)
+
+## 数据集
+项目使用的是：[KITTI数据集](https://www.cvlibs.net/datasets/kitti/eval_odometry.php)，需下载如下图所示的数据集文件：
+<div align="center">
+    <img width=600 alt="KITTI_DATASET" src="https://raw.githubusercontent.com/sunshanlu/mlk-graph-slam/main/doc/imgs/kitti-dataset.png"/>
+</div>
+
 
 ## 安装
 
