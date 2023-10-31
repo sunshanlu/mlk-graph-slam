@@ -89,6 +89,7 @@ $(document).ready(function(){initNavTree('classFrame.html',''); initResizable();
 <a href="#pub-methods">Public 成员函数</a> &#124;
 <a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
 <a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
 <a href="classFrame-members.html">所有成员列表</a>  </div>
   <div class="headertitle"><div class="title">Frame类 参考</div></div>
 </div><!--header-->
@@ -104,20 +105,16 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:acfda04c9d323d0ac43c123ca875e7a9a" id="r_acfda04c9d323d0ac43c123ca875e7a9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFrame.html#acfda04c9d323d0ac43c123ca875e7a9a">Frame</a> (cv::Mat leftIMG, cv::Mat rightIMG)</td></tr>
 <tr class="memdesc:acfda04c9d323d0ac43c123ca875e7a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frame只提供左右图的构造方式  <br /></td></tr>
 <tr class="separator:acfda04c9d323d0ac43c123ca875e7a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a476c6193d9153eee1231d59e3c3834fb" id="r_a476c6193d9153eee1231d59e3c3834fb"><td class="memItemLeft" align="right" valign="top"><a id="a476c6193d9153eee1231d59e3c3834fb" name="a476c6193d9153eee1231d59e3c3834fb"></a>
-std::vector&lt; Feature::Ptr &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getLeftFeatures</b> ()</td></tr>
+<tr class="memitem:a476c6193d9153eee1231d59e3c3834fb" id="r_a476c6193d9153eee1231d59e3c3834fb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structFeature.html#a1b4e01fd0b04341600e8445dc80f26e0">Feature::Ptr</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFrame.html#a476c6193d9153eee1231d59e3c3834fb">getLeftFeatures</a> ()</td></tr>
 <tr class="separator:a476c6193d9153eee1231d59e3c3834fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dbdcb3a93465e86abc3df99712b37bb" id="r_a4dbdcb3a93465e86abc3df99712b37bb"><td class="memItemLeft" align="right" valign="top"><a id="a4dbdcb3a93465e86abc3df99712b37bb" name="a4dbdcb3a93465e86abc3df99712b37bb"></a>
-std::vector&lt; Feature::Ptr &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getRightFeatures</b> ()</td></tr>
+<tr class="memitem:a4dbdcb3a93465e86abc3df99712b37bb" id="r_a4dbdcb3a93465e86abc3df99712b37bb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structFeature.html#a1b4e01fd0b04341600e8445dc80f26e0">Feature::Ptr</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFrame.html#a4dbdcb3a93465e86abc3df99712b37bb">getRightFeatures</a> ()</td></tr>
 <tr class="separator:a4dbdcb3a93465e86abc3df99712b37bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1425c615822c049a15d2173fb01b2431" id="r_a1425c615822c049a15d2173fb01b2431"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFrame.html#a1425c615822c049a15d2173fb01b2431">initKeyFrame</a> (const Camera::Ptr &amp;camera)</td></tr>
+<tr class="memitem:a1425c615822c049a15d2173fb01b2431" id="r_a1425c615822c049a15d2173fb01b2431"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFrame.html#a1425c615822c049a15d2173fb01b2431">initKeyFrame</a> (const <a class="el" href="classCamera.html#a947a0d0c6aedc81aee709437de4edb89">Camera::Ptr</a> &amp;camera)</td></tr>
 <tr class="memdesc:a1425c615822c049a15d2173fb01b2431"><td class="mdescLeft">&#160;</td><td class="mdescRight">设定关键帧，并进行特征检测、匹配  <br /></td></tr>
 <tr class="separator:a1425c615822c049a15d2173fb01b2431"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1256d83ef7d999ab374d3ce99dab50f8" id="r_a1256d83ef7d999ab374d3ce99dab50f8"><td class="memItemLeft" align="right" valign="top"><a id="a1256d83ef7d999ab374d3ce99dab50f8" name="a1256d83ef7d999ab374d3ce99dab50f8"></a>
-SE3d &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>pose</b> ()</td></tr>
+<tr class="memitem:a1256d83ef7d999ab374d3ce99dab50f8" id="r_a1256d83ef7d999ab374d3ce99dab50f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common__include_8h.html#a8b05e098e742b1e5bb918ed54b17b97f">SE3d</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFrame.html#a1256d83ef7d999ab374d3ce99dab50f8">pose</a> ()</td></tr>
 <tr class="separator:a1256d83ef7d999ab374d3ce99dab50f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ec097c93e8c53d3dcef47e2e05faca1" id="r_a5ec097c93e8c53d3dcef47e2e05faca1"><td class="memItemLeft" align="right" valign="top"><a id="a5ec097c93e8c53d3dcef47e2e05faca1" name="a5ec097c93e8c53d3dcef47e2e05faca1"></a>
-const SE3d &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>pose</b> () const</td></tr>
+<tr class="memitem:a5ec097c93e8c53d3dcef47e2e05faca1" id="r_a5ec097c93e8c53d3dcef47e2e05faca1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="common__include_8h.html#a8b05e098e742b1e5bb918ed54b17b97f">SE3d</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFrame.html#a5ec097c93e8c53d3dcef47e2e05faca1">pose</a> () const</td></tr>
 <tr class="separator:a5ec097c93e8c53d3dcef47e2e05faca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -128,29 +125,35 @@ const SE3d &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>pose</b> 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:af0eb979dec2b6ba407bce5e0dfc16088" id="r_af0eb979dec2b6ba407bce5e0dfc16088"><td class="memItemLeft" align="right" valign="top"><a id="af0eb979dec2b6ba407bce5e0dfc16088" name="af0eb979dec2b6ba407bce5e0dfc16088"></a>
-EIGEN_MAKE_ALIGNED_OPERATOR_NEW typedef std::shared_ptr&lt; <a class="el" href="classFrame.html">Frame</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Ptr</b></td></tr>
+<tr class="memitem:af0eb979dec2b6ba407bce5e0dfc16088" id="r_af0eb979dec2b6ba407bce5e0dfc16088"><td class="memItemLeft" align="right" valign="top">EIGEN_MAKE_ALIGNED_OPERATOR_NEW typedef std::shared_ptr&lt; <a class="el" href="classFrame.html">Frame</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFrame.html#af0eb979dec2b6ba407bce5e0dfc16088">Ptr</a></td></tr>
 <tr class="separator:af0eb979dec2b6ba407bce5e0dfc16088"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a150e4523a2115fc0208cc8460f1c58ca" id="r_a150e4523a2115fc0208cc8460f1c58ca"><td class="memItemLeft" align="right" valign="top"><a id="a150e4523a2115fc0208cc8460f1c58ca" name="a150e4523a2115fc0208cc8460f1c58ca"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_keyID</b> = -1</td></tr>
-<tr class="memdesc:a150e4523a2115fc0208cc8460f1c58ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">关键帧id，如果fram是关键帧 <br /></td></tr>
+<tr class="memitem:a150e4523a2115fc0208cc8460f1c58ca" id="r_a150e4523a2115fc0208cc8460f1c58ca"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFrame.html#a150e4523a2115fc0208cc8460f1c58ca">m_keyID</a> = -1</td></tr>
+<tr class="memdesc:a150e4523a2115fc0208cc8460f1c58ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">关键帧id，如果fram是关键帧  <br /></td></tr>
 <tr class="separator:a150e4523a2115fc0208cc8460f1c58ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29f6cd157bec7d4c4c27e3b2882e573f" id="r_a29f6cd157bec7d4c4c27e3b2882e573f"><td class="memItemLeft" align="right" valign="top"><a id="a29f6cd157bec7d4c4c27e3b2882e573f" name="a29f6cd157bec7d4c4c27e3b2882e573f"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_id</b></td></tr>
-<tr class="memdesc:a29f6cd157bec7d4c4c27e3b2882e573f"><td class="mdescLeft">&#160;</td><td class="mdescRight">索引（唯一） <br /></td></tr>
+<tr class="memitem:a29f6cd157bec7d4c4c27e3b2882e573f" id="r_a29f6cd157bec7d4c4c27e3b2882e573f"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFrame.html#a29f6cd157bec7d4c4c27e3b2882e573f">m_id</a></td></tr>
+<tr class="memdesc:a29f6cd157bec7d4c4c27e3b2882e573f"><td class="mdescLeft">&#160;</td><td class="mdescRight">索引（唯一）  <br /></td></tr>
 <tr class="separator:a29f6cd157bec7d4c4c27e3b2882e573f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73faac6fa1b4fbf016b30f80f54a3be4" id="r_a73faac6fa1b4fbf016b30f80f54a3be4"><td class="memItemLeft" align="right" valign="top"><a id="a73faac6fa1b4fbf016b30f80f54a3be4" name="a73faac6fa1b4fbf016b30f80f54a3be4"></a>
-cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>m_leftIMG</b></td></tr>
-<tr class="memdesc:a73faac6fa1b4fbf016b30f80f54a3be4"><td class="mdescLeft">&#160;</td><td class="mdescRight">左图 <br /></td></tr>
+<tr class="memitem:a73faac6fa1b4fbf016b30f80f54a3be4" id="r_a73faac6fa1b4fbf016b30f80f54a3be4"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFrame.html#a73faac6fa1b4fbf016b30f80f54a3be4">m_leftIMG</a></td></tr>
+<tr class="memdesc:a73faac6fa1b4fbf016b30f80f54a3be4"><td class="mdescLeft">&#160;</td><td class="mdescRight">左图  <br /></td></tr>
 <tr class="separator:a73faac6fa1b4fbf016b30f80f54a3be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac21582dd55dbdd771b9cd6da06c766ac" id="r_ac21582dd55dbdd771b9cd6da06c766ac"><td class="memItemLeft" align="right" valign="top"><a id="ac21582dd55dbdd771b9cd6da06c766ac" name="ac21582dd55dbdd771b9cd6da06c766ac"></a>
-cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>m_rightIMG</b></td></tr>
-<tr class="memdesc:ac21582dd55dbdd771b9cd6da06c766ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">右图 <br /></td></tr>
+<tr class="memitem:ac21582dd55dbdd771b9cd6da06c766ac" id="r_ac21582dd55dbdd771b9cd6da06c766ac"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFrame.html#ac21582dd55dbdd771b9cd6da06c766ac">m_rightIMG</a></td></tr>
+<tr class="memdesc:ac21582dd55dbdd771b9cd6da06c766ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">右图  <br /></td></tr>
 <tr class="separator:ac21582dd55dbdd771b9cd6da06c766ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67a4995aa6947bde515221ff96349501" id="r_a67a4995aa6947bde515221ff96349501"><td class="memItemLeft" align="right" valign="top"><a id="a67a4995aa6947bde515221ff96349501" name="a67a4995aa6947bde515221ff96349501"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isKeyFrame</b> = false</td></tr>
-<tr class="memdesc:a67a4995aa6947bde515221ff96349501"><td class="mdescLeft">&#160;</td><td class="mdescRight">关键帧标识 <br /></td></tr>
+<tr class="memitem:a67a4995aa6947bde515221ff96349501" id="r_a67a4995aa6947bde515221ff96349501"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFrame.html#a67a4995aa6947bde515221ff96349501">m_isKeyFrame</a> = false</td></tr>
+<tr class="memdesc:a67a4995aa6947bde515221ff96349501"><td class="mdescLeft">&#160;</td><td class="mdescRight">关键帧标识  <br /></td></tr>
 <tr class="separator:a67a4995aa6947bde515221ff96349501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a3dde09fe35da14df262375387ddb58aa" id="r_a3dde09fe35da14df262375387ddb58aa"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structFeature.html#a1b4e01fd0b04341600e8445dc80f26e0">Feature::Ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFrame.html#a3dde09fe35da14df262375387ddb58aa">m_leftFeatures</a></td></tr>
+<tr class="memdesc:a3dde09fe35da14df262375387ddb58aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">左图特征点  <br /></td></tr>
+<tr class="separator:a3dde09fe35da14df262375387ddb58aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9f04ed789da818291901116e3a8c15d" id="r_ab9f04ed789da818291901116e3a8c15d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structFeature.html#a1b4e01fd0b04341600e8445dc80f26e0">Feature::Ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFrame.html#ab9f04ed789da818291901116e3a8c15d">m_rightFeatures</a></td></tr>
+<tr class="memdesc:ab9f04ed789da818291901116e3a8c15d"><td class="mdescLeft">&#160;</td><td class="mdescRight">右图特征点（不关联MapPoint）  <br /></td></tr>
+<tr class="separator:ab9f04ed789da818291901116e3a8c15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c25bbd87bf0728f2a9bd3c70558e445" id="r_a0c25bbd87bf0728f2a9bd3c70558e445"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common__include_8h.html#a8b05e098e742b1e5bb918ed54b17b97f">SE3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFrame.html#a0c25bbd87bf0728f2a9bd3c70558e445">m_pose</a></td></tr>
+<tr class="memdesc:a0c25bbd87bf0728f2a9bd3c70558e445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frame的位姿Tcw  <br /></td></tr>
+<tr class="separator:a0c25bbd87bf0728f2a9bd3c70558e445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>Frame维护了一帧内的信息 </p>
@@ -259,6 +262,56 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isKeyFrame</b> = fa
 
 </div>
 </div>
+<a id="a476c6193d9153eee1231d59e3c3834fb" name="a476c6193d9153eee1231d59e3c3834fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a476c6193d9153eee1231d59e3c3834fb">&#9670;&#160;</a></span>getLeftFeatures()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structFeature.html#a1b4e01fd0b04341600e8445dc80f26e0">Feature::Ptr</a> &gt; &amp; Frame::getLeftFeatures </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4dbdcb3a93465e86abc3df99712b37bb" name="a4dbdcb3a93465e86abc3df99712b37bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dbdcb3a93465e86abc3df99712b37bb">&#9670;&#160;</a></span>getRightFeatures()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structFeature.html#a1b4e01fd0b04341600e8445dc80f26e0">Feature::Ptr</a> &gt; &amp; Frame::getRightFeatures </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1425c615822c049a15d2173fb01b2431" name="a1425c615822c049a15d2173fb01b2431"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1425c615822c049a15d2173fb01b2431">&#9670;&#160;</a></span>initKeyFrame()</h2>
 
@@ -266,9 +319,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isKeyFrame</b> = fa
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">NAMESPACE_BEGIN int Frame::initKeyFrame </td>
+          <td class="memname"><a class="el" href="common__include_8h.html#a5a86b9e7eb5bd40ee1b3f3cf9f16b516">NAMESPACE_BEGIN</a> int Frame::initKeyFrame </td>
           <td>(</td>
-          <td class="paramtype">const Camera::Ptr &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCamera.html#a947a0d0c6aedc81aee709437de4edb89">Camera::Ptr</a> &amp;&#160;</td>
           <td class="paramname"><em>camera</em></td><td>)</td>
           <td></td>
         </tr>
@@ -281,9 +334,226 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isKeyFrame</b> = fa
 
 </div>
 </div>
+<a id="a1256d83ef7d999ab374d3ce99dab50f8" name="a1256d83ef7d999ab374d3ce99dab50f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1256d83ef7d999ab374d3ce99dab50f8">&#9670;&#160;</a></span>pose() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common__include_8h.html#a8b05e098e742b1e5bb918ed54b17b97f">SE3d</a> &amp; Frame::pose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ec097c93e8c53d3dcef47e2e05faca1" name="a5ec097c93e8c53d3dcef47e2e05faca1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ec097c93e8c53d3dcef47e2e05faca1">&#9670;&#160;</a></span>pose() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="common__include_8h.html#a8b05e098e742b1e5bb918ed54b17b97f">SE3d</a> &amp; Frame::pose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a29f6cd157bec7d4c4c27e3b2882e573f" name="a29f6cd157bec7d4c4c27e3b2882e573f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f6cd157bec7d4c4c27e3b2882e573f">&#9670;&#160;</a></span>m_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t Frame::m_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>索引（唯一） </p>
+
+</div>
+</div>
+<a id="a67a4995aa6947bde515221ff96349501" name="a67a4995aa6947bde515221ff96349501"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67a4995aa6947bde515221ff96349501">&#9670;&#160;</a></span>m_isKeyFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Frame::m_isKeyFrame = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>关键帧标识 </p>
+
+</div>
+</div>
+<a id="a150e4523a2115fc0208cc8460f1c58ca" name="a150e4523a2115fc0208cc8460f1c58ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a150e4523a2115fc0208cc8460f1c58ca">&#9670;&#160;</a></span>m_keyID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t Frame::m_keyID = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>关键帧id，如果fram是关键帧 </p>
+
+</div>
+</div>
+<a id="a3dde09fe35da14df262375387ddb58aa" name="a3dde09fe35da14df262375387ddb58aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dde09fe35da14df262375387ddb58aa">&#9670;&#160;</a></span>m_leftFeatures</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structFeature.html#a1b4e01fd0b04341600e8445dc80f26e0">Feature::Ptr</a>&gt; Frame::m_leftFeatures</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>左图特征点 </p>
+
+</div>
+</div>
+<a id="a73faac6fa1b4fbf016b30f80f54a3be4" name="a73faac6fa1b4fbf016b30f80f54a3be4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73faac6fa1b4fbf016b30f80f54a3be4">&#9670;&#160;</a></span>m_leftIMG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Mat Frame::m_leftIMG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>左图 </p>
+
+</div>
+</div>
+<a id="a0c25bbd87bf0728f2a9bd3c70558e445" name="a0c25bbd87bf0728f2a9bd3c70558e445"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c25bbd87bf0728f2a9bd3c70558e445">&#9670;&#160;</a></span>m_pose</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common__include_8h.html#a8b05e098e742b1e5bb918ed54b17b97f">SE3d</a> Frame::m_pose</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Frame的位姿Tcw </p>
+
+</div>
+</div>
+<a id="ab9f04ed789da818291901116e3a8c15d" name="ab9f04ed789da818291901116e3a8c15d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9f04ed789da818291901116e3a8c15d">&#9670;&#160;</a></span>m_rightFeatures</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structFeature.html#a1b4e01fd0b04341600e8445dc80f26e0">Feature::Ptr</a>&gt; Frame::m_rightFeatures</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>右图特征点（不关联MapPoint） </p>
+
+</div>
+</div>
+<a id="ac21582dd55dbdd771b9cd6da06c766ac" name="ac21582dd55dbdd771b9cd6da06c766ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac21582dd55dbdd771b9cd6da06c766ac">&#9670;&#160;</a></span>m_rightIMG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Mat Frame::m_rightIMG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>右图 </p>
+
+</div>
+</div>
+<a id="af0eb979dec2b6ba407bce5e0dfc16088" name="af0eb979dec2b6ba407bce5e0dfc16088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0eb979dec2b6ba407bce5e0dfc16088">&#9670;&#160;</a></span>Ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EIGEN_MAKE_ALIGNED_OPERATOR_NEW typedef std::shared_ptr&lt;<a class="el" href="classFrame.html">Frame</a>&gt; Frame::Ptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
-<li>/home/rookie-lu/Project/mlk-graph-slam/include/<a class="el" href="map_8h_source.html">map.h</a></li>
-<li>/home/rookie-lu/Project/mlk-graph-slam/src/<b>map.cc</b></li>
+<li>include/<a class="el" href="map_8h_source.html">map.h</a></li>
+<li>src/<a class="el" href="map_8cc.html">map.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

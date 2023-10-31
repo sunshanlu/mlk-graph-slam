@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['optimize_0',['optimize',['../classBackend.html#a3771848ad1773d4e5c14238578fb0c08',1,'Backend']]]
+  ['initkeyframe_0',['initKeyFrame',['../classFrame.html#a1425c615822c049a15d2173fb01b2431',1,'Frame']]],
+  ['inittrack_1',['initTrack',['../classFrontend.html#a9faabf3a14152ae0ffe1a1746d471743',1,'Frontend']]],
+  ['insertkeyframe_2',['insertKeyFrame',['../classMap.html#aff42b7b2ef5614da322e5bc95f8d5811',1,'Map']]],
+  ['insertmappoints_3',['insertMapPoints',['../classMap.html#ac730e7ff2aac962c2aad28166a8a16c2',1,'Map']]]
 ];

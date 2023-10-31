@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MLK-SLAM: /home/rookie-lu/Project/mlk-graph-slam/include/frontend.h 文件参考</title>
+<title>MLK-SLAM: include/frontend.h 文件参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('frontend_8h.html',''); initResizable()
 <code>#include &quot;<a class="el" href="common__include_8h_source.html">common_include.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dataset_8h_source.html">dataset.h</a>&quot;</code><br />
-<code>#include &quot;g2o_types.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="g2o__types_8h_source.html">g2o_types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="map_8h_source.html">map.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="viewer_8h_source.html">viewer.h</a>&quot;</code><br />
 </div>
@@ -113,22 +113,21 @@ $(document).ready(function(){initNavTree('frontend_8h.html',''); initResizable()
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 枚举</h2></td></tr>
-<tr class="memitem:aba2ff8299053dbaf8792854cb2986032" id="r_aba2ff8299053dbaf8792854cb2986032"><td class="memItemLeft" align="right" valign="top"><a id="aba2ff8299053dbaf8792854cb2986032" name="aba2ff8299053dbaf8792854cb2986032"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8h.html#aba2ff8299053dbaf8792854cb2986032">TrackStatus</a> { <br />
-&#160;&#160;<b>INIT_TRACKING</b>
-, <b>TRACK_GOOD</b>
-, <b>TRACK_BAD</b>
-, <b>TRACK_LOST</b>
+<tr class="memitem:aba2ff8299053dbaf8792854cb2986032" id="r_aba2ff8299053dbaf8792854cb2986032"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8h.html#aba2ff8299053dbaf8792854cb2986032">TrackStatus</a> { <br />
+&#160;&#160;<a class="el" href="frontend_8h.html#aba2ff8299053dbaf8792854cb2986032a75ce2356f6156c3001f461db6b2624e5">INIT_TRACKING</a>
+, <a class="el" href="frontend_8h.html#aba2ff8299053dbaf8792854cb2986032ad5903fb92cb7f115e4e2817d8d6047ac">TRACK_GOOD</a>
+, <a class="el" href="frontend_8h.html#aba2ff8299053dbaf8792854cb2986032a251515e42d501f1aee7f7a203af6ba3a">TRACK_BAD</a>
+, <a class="el" href="frontend_8h.html#aba2ff8299053dbaf8792854cb2986032aa470a2f9ff0189df95c4c452316605ff">TRACK_LOST</a>
 , <br />
-&#160;&#160;<b>TRACK_ERROR</b>
+&#160;&#160;<a class="el" href="frontend_8h.html#aba2ff8299053dbaf8792854cb2986032ae9b6c6ab5a91b22dfe9261aea609443a">TRACK_ERROR</a>
 <br />
  }</td></tr>
-<tr class="memdesc:aba2ff8299053dbaf8792854cb2986032"><td class="mdescLeft">&#160;</td><td class="mdescRight">TrackStatus来表示追踪和位姿估计后的状态 INIT_TRACKING 代表前端处在关键帧初始化状态 TRACK_GOOD 代表前端运转良好（可用MapPoint数目大于50） TRACK_BAD 代表前端运转较差（可用MapPoint数目在20-50） TRACK_LOST 代表前端追踪失败，需要关键帧初始化（可用MapPoint数目小于20） TRACK_ERROR 当关键帧初始化后，依然TRACK_LOST，前端退出，程序结束 <br /></td></tr>
+<tr class="memdesc:aba2ff8299053dbaf8792854cb2986032"><td class="mdescLeft">&#160;</td><td class="mdescRight">TrackStatus来表示追踪和位姿估计后的状态 INIT_TRACKING 代表前端处在关键帧初始化状态 TRACK_GOOD 代表前端运转良好（可用MapPoint数目大于50） TRACK_BAD 代表前端运转较差（可用MapPoint数目在20-50） TRACK_LOST 代表前端追踪失败，需要关键帧初始化（可用MapPoint数目小于20） TRACK_ERROR 当关键帧初始化后，依然TRACK_LOST，前端退出，程序结束  <a href="frontend_8h.html#aba2ff8299053dbaf8792854cb2986032">更多...</a><br /></td></tr>
 <tr class="separator:aba2ff8299053dbaf8792854cb2986032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 函数</h2></td></tr>
-<tr class="memitem:ac8ba99a04f2e89c1d7a5204f51302c0b" id="r_ac8ba99a04f2e89c1d7a5204f51302c0b"><td class="memItemLeft" align="right" valign="top"><a id="ac8ba99a04f2e89c1d7a5204f51302c0b" name="ac8ba99a04f2e89c1d7a5204f51302c0b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>printPose</b> (const SE3d &amp;pose)</td></tr>
+<tr class="memitem:ac8ba99a04f2e89c1d7a5204f51302c0b" id="r_ac8ba99a04f2e89c1d7a5204f51302c0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8h.html#ac8ba99a04f2e89c1d7a5204f51302c0b">printPose</a> (const <a class="el" href="common__include_8h.html#a8b05e098e742b1e5bb918ed54b17b97f">SE3d</a> &amp;pose)</td></tr>
 <tr class="separator:ac8ba99a04f2e89c1d7a5204f51302c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
@@ -137,7 +136,58 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>printPose</b> (const 
 <dl class="section version"><dt>版本</dt><dd>1.0 </dd></dl>
 <dl class="section date"><dt>日期</dt><dd>Oct-28-2023</dd></dl>
 <dl class="section copyright"><dt>版权所有</dt><dd>Copyright (c) 2023 rookie-lu </dd></dl>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">枚举类型说明</h2>
+<a id="aba2ff8299053dbaf8792854cb2986032" name="aba2ff8299053dbaf8792854cb2986032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba2ff8299053dbaf8792854cb2986032">&#9670;&#160;</a></span>TrackStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="frontend_8h.html#aba2ff8299053dbaf8792854cb2986032">TrackStatus</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>TrackStatus来表示追踪和位姿估计后的状态 INIT_TRACKING 代表前端处在关键帧初始化状态 TRACK_GOOD 代表前端运转良好（可用MapPoint数目大于50） TRACK_BAD 代表前端运转较差（可用MapPoint数目在20-50） TRACK_LOST 代表前端追踪失败，需要关键帧初始化（可用MapPoint数目小于20） TRACK_ERROR 当关键帧初始化后，依然TRACK_LOST，前端退出，程序结束 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="aba2ff8299053dbaf8792854cb2986032a75ce2356f6156c3001f461db6b2624e5" name="aba2ff8299053dbaf8792854cb2986032a75ce2356f6156c3001f461db6b2624e5"></a>INIT_TRACKING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aba2ff8299053dbaf8792854cb2986032ad5903fb92cb7f115e4e2817d8d6047ac" name="aba2ff8299053dbaf8792854cb2986032ad5903fb92cb7f115e4e2817d8d6047ac"></a>TRACK_GOOD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aba2ff8299053dbaf8792854cb2986032a251515e42d501f1aee7f7a203af6ba3a" name="aba2ff8299053dbaf8792854cb2986032a251515e42d501f1aee7f7a203af6ba3a"></a>TRACK_BAD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aba2ff8299053dbaf8792854cb2986032aa470a2f9ff0189df95c4c452316605ff" name="aba2ff8299053dbaf8792854cb2986032aa470a2f9ff0189df95c4c452316605ff"></a>TRACK_LOST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aba2ff8299053dbaf8792854cb2986032ae9b6c6ab5a91b22dfe9261aea609443a" name="aba2ff8299053dbaf8792854cb2986032ae9b6c6ab5a91b22dfe9261aea609443a"></a>TRACK_ERROR&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="ac8ba99a04f2e89c1d7a5204f51302c0b" name="ac8ba99a04f2e89c1d7a5204f51302c0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ba99a04f2e89c1d7a5204f51302c0b">&#9670;&#160;</a></span>printPose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printPose </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="common__include_8h.html#a8b05e098e742b1e5bb918ed54b17b97f">SE3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>pose</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.15-->
 <!-- start footer part -->

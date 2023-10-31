@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MLK-SLAM: mlk-graph-slam</title>
+<title>MLK-SLAM: MLK-SLAM</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,10 +85,37 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">mlk-graph-slam </div></div>
+  <div class="headertitle"><div class="title">MLK-SLAM </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__2home_2rookie-lu_2Project_2mlk-graph-slam_2README"></a>Create a slam project, which uses multi-layer optical flow method as the front end and graph optimization as the back end. </p>
+<div class="textblock"><p><a class="anchor" id="md_README"></a> <img src="https://img.shields.io/badge/c++-std14-blue" alt="C++" class="inline"/> <img src="https://img.shields.io/badge/platform-ubuntu20.04-orange" alt="ubuntu" class="inline"/> <img src="https://img.shields.io/badge/slam-stereo--visual-green" alt="SLAM" class="inline"/> <img src="https://img.shields.io/badge/opticalFlow-LK-brightgreen" alt="LK" class="inline"/> <img src="https://img.shields.io/badge/BA-SildingWindow-yellowgreen" alt="BA" class="inline"/> <img src="https://img.shields.io/badge/license-Apache-blue" alt="License" class="inline"/> <img src="https://img.shields.io/badge/version-v1.0.0-orange" alt="version" class="inline"/></p>
+<p>该项目构建了一种基于多层光流法的前端和滑动窗口后端BA的简单slam系统，主要借鉴了《视觉slam十四讲》的内容。</p>
+<p>系统的运行效果如下所示：</p>
+<div align="center"> <a href="https://www.youtube.com/watch?v=6GFBdjZPgTg" title="youtube:MLK-SLAM"><img src="https://raw.githubusercontent.com/sunshanlu/mlk-graph-slam/main/doc/imgs/mlk-slam.png" alt="mlk-slam" width="600" class="inline"/> </a> </div><h1><a class="anchor" id="autotoc_md1"></a>
+特征</h1>
+<ul>
+<li>前端采用多层光流法，用于特征匹配</li>
+<li>后端采用了基于滑动窗口的BA</li>
+<li>与《视觉slam十四讲》不同的是<ul>
+<li>前端线程并不会等待后端线程运行结束</li>
+<li>使用Pangolin渲染图片，而不是使用OpenCV</li>
+<li>使用更常用的json作为配置文件，而不是yml</li>
+<li>使用更轻量的spdlog作为日志输出库，而不是glog</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md2"></a>
+依赖</h1>
+<ul>
+<li><a href="https://github.com/microsoft/vcpkg">vcpkg install</a></li>
+<li><a href="https://cmake.org/">cmake 3.16+</a></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md3"></a>
+文档</h1>
+<p>文档地址：<a href="https://sunshanlu.github.io/mlk-graph-slam/">https://sunshanlu.github.io/mlk-graph-slam/</a></p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+LICENSE</h1>
+<p>该项目的代码是根据<a href="./LICENSE">MIT License</a>许可证授权的。如需引用，请说明出处。 </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -25,7 +25,14 @@
 var NAVTREE =
 [
   [ "MLK-SLAM", "index.html", [
-    [ "mlk-graph-slam", "index.html", null ],
+    [ "特征", "index.html#autotoc_md1", null ],
+    [ "依赖", "index.html#autotoc_md2", null ],
+    [ "文档", "index.html#autotoc_md3", null ],
+    [ "LICENSE", "index.html#autotoc_md4", null ],
+    [ "Installation", "md_doc_2Installation.html", [
+      [ "安装依赖", "md_doc_2Installation.html#autotoc_md6", null ]
+    ] ],
+    [ "Run", "md_doc_2Run.html", null ],
     [ "类", "annotated.html", [
       [ "类列表", "annotated.html", "annotated_dup" ],
       [ "类索引", "classes.html", null ],
@@ -33,14 +40,19 @@ var NAVTREE =
       [ "类成员", "functions.html", [
         [ "全部", "functions.html", null ],
         [ "函数", "functions_func.html", null ],
-        [ "变量", "functions_vars.html", null ]
+        [ "变量", "functions_vars.html", null ],
+        [ "类型定义", "functions_type.html", null ]
       ] ]
     ] ],
     [ "文件", "files.html", [
       [ "文件列表", "files.html", "files_dup" ],
       [ "文件成员", "globals.html", [
         [ "全部", "globals.html", null ],
-        [ "枚举", "globals_enum.html", null ]
+        [ "函数", "globals_func.html", null ],
+        [ "变量", "globals_vars.html", null ],
+        [ "类型定义", "globals_type.html", null ],
+        [ "枚举", "globals_enum.html", null ],
+        [ "宏定义", "globals_defs.html", null ]
       ] ]
     ] ]
   ] ]
@@ -48,7 +60,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"structMapPoint.html#a245a90852705f699c9467bc080ebcf1f"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

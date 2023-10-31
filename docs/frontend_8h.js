@@ -7,5 +7,6 @@ var frontend_8h =
       [ "TRACK_BAD", "frontend_8h.html#aba2ff8299053dbaf8792854cb2986032a251515e42d501f1aee7f7a203af6ba3a", null ],
       [ "TRACK_LOST", "frontend_8h.html#aba2ff8299053dbaf8792854cb2986032aa470a2f9ff0189df95c4c452316605ff", null ],
       [ "TRACK_ERROR", "frontend_8h.html#aba2ff8299053dbaf8792854cb2986032ae9b6c6ab5a91b22dfe9261aea609443a", null ]
-    ] ]
+    ] ],
+    [ "printPose", "frontend_8h.html#ac8ba99a04f2e89c1d7a5204f51302c0b", null ]
 ];

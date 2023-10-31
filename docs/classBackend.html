@@ -89,6 +89,8 @@ $(document).ready(function(){initNavTree('classBackend.html',''); initResizable(
 <a href="#pub-methods">Public 成员函数</a> &#124;
 <a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
 <a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
 <a href="classBackend-members.html">所有成员列表</a>  </div>
   <div class="headertitle"><div class="title">Backend类 参考</div></div>
 </div><!--header-->
@@ -101,24 +103,20 @@ $(document).ready(function(){initNavTree('classBackend.html',''); initResizable(
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a869efcb5d8443cb774073bf64a9eb9c6" id="r_a869efcb5d8443cb774073bf64a9eb9c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBackend.html#a869efcb5d8443cb774073bf64a9eb9c6">getPointsAndFrames</a> (std::vector&lt; Frame::Ptr &gt; &amp;frames, std::vector&lt; MapPoint::Ptr &gt; &amp;points)</td></tr>
+<tr class="memitem:a869efcb5d8443cb774073bf64a9eb9c6" id="r_a869efcb5d8443cb774073bf64a9eb9c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBackend.html#a869efcb5d8443cb774073bf64a9eb9c6">getPointsAndFrames</a> (std::vector&lt; <a class="el" href="classFrame.html#af0eb979dec2b6ba407bce5e0dfc16088">Frame::Ptr</a> &gt; &amp;frames, std::vector&lt; <a class="el" href="structMapPoint.html#a7d9577df3dd83028d995e28642244939">MapPoint::Ptr</a> &gt; &amp;points)</td></tr>
 <tr class="memdesc:a869efcb5d8443cb774073bf64a9eb9c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">从m_map中获取激活关键帧和激活地图点  <br /></td></tr>
 <tr class="separator:a869efcb5d8443cb774073bf64a9eb9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e79f6021debcfac7f2ec0ad2bca8b27" id="r_a2e79f6021debcfac7f2ec0ad2bca8b27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBackend.html#a2e79f6021debcfac7f2ec0ad2bca8b27">addVertexAndEdge</a> (std::unordered_map&lt; std::size_t, <a class="el" href="classPoseVertex.html">PoseVertex</a> * &gt; &amp;poseVertexes, std::unordered_map&lt; std::size_t, <a class="el" href="classPointVertex.html">PointVertex</a> * &gt; &amp;pointVertexes, std::unordered_map&lt; Feature::Ptr, <a class="el" href="classPosePointEdge.html">PosePointEdge</a> * &gt; &amp;edges, std::vector&lt; Frame::Ptr &gt; &amp;frames, std::vector&lt; MapPoint::Ptr &gt; &amp;points, g2o::SparseOptimizer &amp;graph)</td></tr>
+<tr class="memitem:a2e79f6021debcfac7f2ec0ad2bca8b27" id="r_a2e79f6021debcfac7f2ec0ad2bca8b27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBackend.html#a2e79f6021debcfac7f2ec0ad2bca8b27">addVertexAndEdge</a> (std::unordered_map&lt; std::size_t, <a class="el" href="classPoseVertex.html">PoseVertex</a> * &gt; &amp;poseVertexes, std::unordered_map&lt; std::size_t, <a class="el" href="classPointVertex.html">PointVertex</a> * &gt; &amp;pointVertexes, std::unordered_map&lt; <a class="el" href="structFeature.html#a1b4e01fd0b04341600e8445dc80f26e0">Feature::Ptr</a>, <a class="el" href="classPosePointEdge.html">PosePointEdge</a> * &gt; &amp;edges, std::vector&lt; <a class="el" href="classFrame.html#af0eb979dec2b6ba407bce5e0dfc16088">Frame::Ptr</a> &gt; &amp;frames, std::vector&lt; <a class="el" href="structMapPoint.html#a7d9577df3dd83028d995e28642244939">MapPoint::Ptr</a> &gt; &amp;points, g2o::SparseOptimizer &amp;graph)</td></tr>
 <tr class="memdesc:a2e79f6021debcfac7f2ec0ad2bca8b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加顶点和边信息  <br /></td></tr>
 <tr class="separator:a2e79f6021debcfac7f2ec0ad2bca8b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c85ce904a1fbca7d2a830d6c78a3ac4" id="r_a6c85ce904a1fbca7d2a830d6c78a3ac4"><td class="memItemLeft" align="right" valign="top"><a id="a6c85ce904a1fbca7d2a830d6c78a3ac4" name="a6c85ce904a1fbca7d2a830d6c78a3ac4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> ()</td></tr>
-<tr class="memdesc:a6c85ce904a1fbca7d2a830d6c78a3ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">后端启动的线程函数 <br /></td></tr>
+<tr class="memitem:a6c85ce904a1fbca7d2a830d6c78a3ac4" id="r_a6c85ce904a1fbca7d2a830d6c78a3ac4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBackend.html#a6c85ce904a1fbca7d2a830d6c78a3ac4">run</a> ()</td></tr>
+<tr class="memdesc:a6c85ce904a1fbca7d2a830d6c78a3ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">后端启动的线程函数  <br /></td></tr>
 <tr class="separator:a6c85ce904a1fbca7d2a830d6c78a3ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af218807b34db21b91de1a0d4b4f52f56" id="r_af218807b34db21b91de1a0d4b4f52f56"><td class="memItemLeft" align="right" valign="top"><a id="af218807b34db21b91de1a0d4b4f52f56" name="af218807b34db21b91de1a0d4b4f52f56"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setMap</b> (const Map::Ptr &amp;map)</td></tr>
+<tr class="memitem:af218807b34db21b91de1a0d4b4f52f56" id="r_af218807b34db21b91de1a0d4b4f52f56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBackend.html#af218807b34db21b91de1a0d4b4f52f56">setMap</a> (const <a class="el" href="classMap.html#ad0d64115a386bce07aa182e1935f40b8">Map::Ptr</a> &amp;map)</td></tr>
 <tr class="separator:af218807b34db21b91de1a0d4b4f52f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cb442b73e53fcbfe293cefad7b0724c" id="r_a2cb442b73e53fcbfe293cefad7b0724c"><td class="memItemLeft" align="right" valign="top"><a id="a2cb442b73e53fcbfe293cefad7b0724c" name="a2cb442b73e53fcbfe293cefad7b0724c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setCamera</b> (const Camera::Ptr &amp;camera)</td></tr>
+<tr class="memitem:a2cb442b73e53fcbfe293cefad7b0724c" id="r_a2cb442b73e53fcbfe293cefad7b0724c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBackend.html#a2cb442b73e53fcbfe293cefad7b0724c">setCamera</a> (const <a class="el" href="classCamera.html#a947a0d0c6aedc81aee709437de4edb89">Camera::Ptr</a> &amp;camera)</td></tr>
 <tr class="separator:a2cb442b73e53fcbfe293cefad7b0724c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb43b81adf8b05b345e8da53706b600a" id="r_adb43b81adf8b05b345e8da53706b600a"><td class="memItemLeft" align="right" valign="top"><a id="adb43b81adf8b05b345e8da53706b600a" name="adb43b81adf8b05b345e8da53706b600a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setViewer</b> (const Viewer::Ptr &amp;viewer)</td></tr>
+<tr class="memitem:adb43b81adf8b05b345e8da53706b600a" id="r_adb43b81adf8b05b345e8da53706b600a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBackend.html#adb43b81adf8b05b345e8da53706b600a">setViewer</a> (const <a class="el" href="classViewer.html#a48c59cba7d342beb04f4f984b6c88ed8">Viewer::Ptr</a> &amp;viewer)</td></tr>
 <tr class="separator:adb43b81adf8b05b345e8da53706b600a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3771848ad1773d4e5c14238578fb0c08" id="r_a3771848ad1773d4e5c14238578fb0c08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBackend.html#a3771848ad1773d4e5c14238578fb0c08">optimize</a> (std::unique_lock&lt; std::mutex &gt; &amp;lck)</td></tr>
 <tr class="memdesc:a3771848ad1773d4e5c14238578fb0c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">进行优化，外点剔除，优化结果回带和清理地图信息  <br /></td></tr>
@@ -126,31 +124,99 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setViewer</b> (const 
 <tr class="memitem:adbb81ea6937c0e70123f89e71384f627" id="r_adbb81ea6937c0e70123f89e71384f627"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBackend.html#adbb81ea6937c0e70123f89e71384f627">setOptValue</a> (std::unordered_map&lt; std::size_t, <a class="el" href="classPoseVertex.html">PoseVertex</a> * &gt; poseVertexes, std::unordered_map&lt; std::size_t, <a class="el" href="classPointVertex.html">PointVertex</a> * &gt; pointVertexes)</td></tr>
 <tr class="memdesc:adbb81ea6937c0e70123f89e71384f627"><td class="mdescLeft">&#160;</td><td class="mdescRight">保证地图的线程安全条件下，更新地图信息  <br /></td></tr>
 <tr class="separator:adbb81ea6937c0e70123f89e71384f627"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7329b07ee2c17e4763f336db220b4a07" id="r_a7329b07ee2c17e4763f336db220b4a07"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBackend.html#a7329b07ee2c17e4763f336db220b4a07">detectOutlier</a> (g2o::SparseOptimizer &amp;graph, std::unordered_map&lt; Feature::Ptr, <a class="el" href="classPosePointEdge.html">PosePointEdge</a> * &gt; &amp;edges)</td></tr>
+<tr class="memitem:a7329b07ee2c17e4763f336db220b4a07" id="r_a7329b07ee2c17e4763f336db220b4a07"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBackend.html#a7329b07ee2c17e4763f336db220b4a07">detectOutlier</a> (g2o::SparseOptimizer &amp;graph, std::unordered_map&lt; <a class="el" href="structFeature.html#a1b4e01fd0b04341600e8445dc80f26e0">Feature::Ptr</a>, <a class="el" href="classPosePointEdge.html">PosePointEdge</a> * &gt; &amp;edges)</td></tr>
 <tr class="memdesc:a7329b07ee2c17e4763f336db220b4a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">检测后端优化过程中的外点  <br /></td></tr>
 <tr class="separator:a7329b07ee2c17e4763f336db220b4a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a4ef743817a9cf31d02b7ae3f12cb53" id="r_a2a4ef743817a9cf31d02b7ae3f12cb53"><td class="memItemLeft" align="right" valign="top"><a id="a2a4ef743817a9cf31d02b7ae3f12cb53" name="a2a4ef743817a9cf31d02b7ae3f12cb53"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Backend</b> (const <a class="el" href="classBackend.html">Backend</a> &amp;other)=delete</td></tr>
+<tr class="memitem:a2a4ef743817a9cf31d02b7ae3f12cb53" id="r_a2a4ef743817a9cf31d02b7ae3f12cb53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBackend.html#a2a4ef743817a9cf31d02b7ae3f12cb53">Backend</a> (const <a class="el" href="classBackend.html">Backend</a> &amp;other)=delete</td></tr>
 <tr class="separator:a2a4ef743817a9cf31d02b7ae3f12cb53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2de1eebd33abad21f80f13bc54a20a51" id="r_a2de1eebd33abad21f80f13bc54a20a51"><td class="memItemLeft" align="right" valign="top"><a id="a2de1eebd33abad21f80f13bc54a20a51" name="a2de1eebd33abad21f80f13bc54a20a51"></a>
-<a class="el" href="classBackend.html">Backend</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classBackend.html">Backend</a> &amp;other)=delete</td></tr>
+<tr class="memitem:a2de1eebd33abad21f80f13bc54a20a51" id="r_a2de1eebd33abad21f80f13bc54a20a51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBackend.html">Backend</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBackend.html#a2de1eebd33abad21f80f13bc54a20a51">operator=</a> (const <a class="el" href="classBackend.html">Backend</a> &amp;other)=delete</td></tr>
 <tr class="separator:a2de1eebd33abad21f80f13bc54a20a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 静态 Public 成员函数</h2></td></tr>
-<tr class="memitem:a2c7088f375ae09fe1414435a30feff4f" id="r_a2c7088f375ae09fe1414435a30feff4f"><td class="memItemLeft" align="right" valign="top"><a id="a2c7088f375ae09fe1414435a30feff4f" name="a2c7088f375ae09fe1414435a30feff4f"></a>
-static Ptr&#160;</td><td class="memItemRight" valign="bottom"><b>getInstance</b> ()</td></tr>
+<tr class="memitem:a2c7088f375ae09fe1414435a30feff4f" id="r_a2c7088f375ae09fe1414435a30feff4f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classBackend.html#ac506962d88a386f5dca16d4710931086">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBackend.html#a2c7088f375ae09fe1414435a30feff4f">getInstance</a> ()</td></tr>
 <tr class="separator:a2c7088f375ae09fe1414435a30feff4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:ac506962d88a386f5dca16d4710931086" id="r_ac506962d88a386f5dca16d4710931086"><td class="memItemLeft" align="right" valign="top"><a id="ac506962d88a386f5dca16d4710931086" name="ac506962d88a386f5dca16d4710931086"></a>
-EIGEN_MAKE_ALIGNED_OPERATOR_NEW typedef std::shared_ptr&lt; <a class="el" href="classBackend.html">Backend</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Ptr</b></td></tr>
+<tr class="memitem:ac506962d88a386f5dca16d4710931086" id="r_ac506962d88a386f5dca16d4710931086"><td class="memItemLeft" align="right" valign="top">EIGEN_MAKE_ALIGNED_OPERATOR_NEW typedef std::shared_ptr&lt; <a class="el" href="classBackend.html">Backend</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBackend.html#ac506962d88a386f5dca16d4710931086">Ptr</a></td></tr>
 <tr class="separator:ac506962d88a386f5dca16d4710931086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:aad54b8839bf1eaf83a274ed91fac65e0" id="r_aad54b8839bf1eaf83a274ed91fac65e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBackend.html#aad54b8839bf1eaf83a274ed91fac65e0">Backend</a> ()=default</td></tr>
+<tr class="separator:aad54b8839bf1eaf83a274ed91fac65e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:aabc785317bef848c4e891aecf771c212" id="r_aabc785317bef848c4e891aecf771c212"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMap.html#ad0d64115a386bce07aa182e1935f40b8">Map::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBackend.html#aabc785317bef848c4e891aecf771c212">m_map</a></td></tr>
+<tr class="memdesc:aabc785317bef848c4e891aecf771c212"><td class="mdescLeft">&#160;</td><td class="mdescRight">地图  <br /></td></tr>
+<tr class="separator:aabc785317bef848c4e891aecf771c212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdba35d7f261c4fb421bcc7a7f4cbeae" id="r_abdba35d7f261c4fb421bcc7a7f4cbeae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCamera.html#a947a0d0c6aedc81aee709437de4edb89">Camera::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBackend.html#abdba35d7f261c4fb421bcc7a7f4cbeae">m_camera</a></td></tr>
+<tr class="memdesc:abdba35d7f261c4fb421bcc7a7f4cbeae"><td class="mdescLeft">&#160;</td><td class="mdescRight">相机，保存内参  <br /></td></tr>
+<tr class="separator:abdba35d7f261c4fb421bcc7a7f4cbeae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab708b92c363895c73acb03e586f4cff7" id="r_ab708b92c363895c73acb03e586f4cff7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classViewer.html#a48c59cba7d342beb04f4f984b6c88ed8">Viewer::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBackend.html#ab708b92c363895c73acb03e586f4cff7">m_viewer</a></td></tr>
+<tr class="memdesc:ab708b92c363895c73acb03e586f4cff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">全局展示对象  <br /></td></tr>
+<tr class="separator:ab708b92c363895c73acb03e586f4cff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45809f4f23a9609c0f9add98e779c805" id="r_a45809f4f23a9609c0f9add98e779c805"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBackend.html#a45809f4f23a9609c0f9add98e779c805">m_isStop</a> = false</td></tr>
+<tr class="memdesc:a45809f4f23a9609c0f9add98e779c805"><td class="mdescLeft">&#160;</td><td class="mdescRight">后端停止标识  <br /></td></tr>
+<tr class="separator:a45809f4f23a9609c0f9add98e779c805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>后端优化类 </p>
-</div><h2 class="groupheader">成员函数说明</h2>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a2a4ef743817a9cf31d02b7ae3f12cb53" name="a2a4ef743817a9cf31d02b7ae3f12cb53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a4ef743817a9cf31d02b7ae3f12cb53">&#9670;&#160;</a></span>Backend() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Backend::Backend </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classBackend.html">Backend</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad54b8839bf1eaf83a274ed91fac65e0" name="aad54b8839bf1eaf83a274ed91fac65e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad54b8839bf1eaf83a274ed91fac65e0">&#9670;&#160;</a></span>Backend() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Backend::Backend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
 <a id="a2e79f6021debcfac7f2ec0ad2bca8b27" name="a2e79f6021debcfac7f2ec0ad2bca8b27"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2e79f6021debcfac7f2ec0ad2bca8b27">&#9670;&#160;</a></span>addVertexAndEdge()</h2>
 
@@ -172,19 +238,19 @@ EIGEN_MAKE_ALIGNED_OPERATOR_NEW typedef std::shared_ptr&lt; <a class="el" href="
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::unordered_map&lt; Feature::Ptr, <a class="el" href="classPosePointEdge.html">PosePointEdge</a> * &gt; &amp;&#160;</td>
+          <td class="paramtype">std::unordered_map&lt; <a class="el" href="structFeature.html#a1b4e01fd0b04341600e8445dc80f26e0">Feature::Ptr</a>, <a class="el" href="classPosePointEdge.html">PosePointEdge</a> * &gt; &amp;&#160;</td>
           <td class="paramname"><em>edges</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; Frame::Ptr &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classFrame.html#af0eb979dec2b6ba407bce5e0dfc16088">Frame::Ptr</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>frames</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; MapPoint::Ptr &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structMapPoint.html#a7d9577df3dd83028d995e28642244939">MapPoint::Ptr</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>points</em>, </td>
         </tr>
         <tr>
@@ -257,7 +323,7 @@ EIGEN_MAKE_ALIGNED_OPERATOR_NEW typedef std::shared_ptr&lt; <a class="el" href="
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::unordered_map&lt; Feature::Ptr, <a class="el" href="classPosePointEdge.html">PosePointEdge</a> * &gt; &amp;&#160;</td>
+          <td class="paramtype">std::unordered_map&lt; <a class="el" href="structFeature.html#a1b4e01fd0b04341600e8445dc80f26e0">Feature::Ptr</a>, <a class="el" href="classPosePointEdge.html">PosePointEdge</a> * &gt; &amp;&#160;</td>
           <td class="paramname"><em>edges</em>&#160;</td>
         </tr>
         <tr>
@@ -286,6 +352,31 @@ EIGEN_MAKE_ALIGNED_OPERATOR_NEW typedef std::shared_ptr&lt; <a class="el" href="
 
 </div>
 </div>
+<a id="a2c7088f375ae09fe1414435a30feff4f" name="a2c7088f375ae09fe1414435a30feff4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c7088f375ae09fe1414435a30feff4f">&#9670;&#160;</a></span>getInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classBackend.html#ac506962d88a386f5dca16d4710931086">Ptr</a> Backend::getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a869efcb5d8443cb774073bf64a9eb9c6" name="a869efcb5d8443cb774073bf64a9eb9c6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a869efcb5d8443cb774073bf64a9eb9c6">&#9670;&#160;</a></span>getPointsAndFrames()</h2>
 
@@ -295,13 +386,13 @@ EIGEN_MAKE_ALIGNED_OPERATOR_NEW typedef std::shared_ptr&lt; <a class="el" href="
         <tr>
           <td class="memname">void Backend::getPointsAndFrames </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; Frame::Ptr &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classFrame.html#af0eb979dec2b6ba407bce5e0dfc16088">Frame::Ptr</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>frames</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; MapPoint::Ptr &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structMapPoint.html#a7d9577df3dd83028d995e28642244939">MapPoint::Ptr</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>points</em>&#160;</td>
         </tr>
         <tr>
@@ -329,6 +420,32 @@ EIGEN_MAKE_ALIGNED_OPERATOR_NEW typedef std::shared_ptr&lt; <a class="el" href="
 
 </div>
 </div>
+<a id="a2de1eebd33abad21f80f13bc54a20a51" name="a2de1eebd33abad21f80f13bc54a20a51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2de1eebd33abad21f80f13bc54a20a51">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBackend.html">Backend</a> &amp; Backend::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classBackend.html">Backend</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3771848ad1773d4e5c14238578fb0c08" name="a3771848ad1773d4e5c14238578fb0c08"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3771848ad1773d4e5c14238578fb0c08">&#9670;&#160;</a></span>optimize()</h2>
 
@@ -336,7 +453,7 @@ EIGEN_MAKE_ALIGNED_OPERATOR_NEW typedef std::shared_ptr&lt; <a class="el" href="
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">NAMESPACE_BEGIN void Backend::optimize </td>
+          <td class="memname"><a class="el" href="common__include_8h.html#a5a86b9e7eb5bd40ee1b3f3cf9f16b516">NAMESPACE_BEGIN</a> void Backend::optimize </td>
           <td>(</td>
           <td class="paramtype">std::unique_lock&lt; std::mutex &gt; &amp;&#160;</td>
           <td class="paramname"><em>lck</em></td><td>)</td>
@@ -353,6 +470,77 @@ EIGEN_MAKE_ALIGNED_OPERATOR_NEW typedef std::shared_ptr&lt; <a class="el" href="
   </dd>
 </dl>
 <p>在激活地图点和激活关键帧拷贝完成后释放互斥量 </p>
+
+</div>
+</div>
+<a id="a6c85ce904a1fbca7d2a830d6c78a3ac4" name="a6c85ce904a1fbca7d2a830d6c78a3ac4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c85ce904a1fbca7d2a830d6c78a3ac4">&#9670;&#160;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Backend::run </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>后端启动的线程函数 </p>
+
+</div>
+</div>
+<a id="a2cb442b73e53fcbfe293cefad7b0724c" name="a2cb442b73e53fcbfe293cefad7b0724c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cb442b73e53fcbfe293cefad7b0724c">&#9670;&#160;</a></span>setCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Backend::setCamera </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCamera.html#a947a0d0c6aedc81aee709437de4edb89">Camera::Ptr</a> &amp;&#160;</td>
+          <td class="paramname"><em>camera</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af218807b34db21b91de1a0d4b4f52f56" name="af218807b34db21b91de1a0d4b4f52f56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af218807b34db21b91de1a0d4b4f52f56">&#9670;&#160;</a></span>setMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Backend::setMap </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMap.html#ad0d64115a386bce07aa182e1935f40b8">Map::Ptr</a> &amp;&#160;</td>
+          <td class="paramname"><em>map</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -399,9 +587,146 @@ EIGEN_MAKE_ALIGNED_OPERATOR_NEW typedef std::shared_ptr&lt; <a class="el" href="
 
 </div>
 </div>
+<a id="adb43b81adf8b05b345e8da53706b600a" name="adb43b81adf8b05b345e8da53706b600a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb43b81adf8b05b345e8da53706b600a">&#9670;&#160;</a></span>setViewer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Backend::setViewer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classViewer.html#a48c59cba7d342beb04f4f984b6c88ed8">Viewer::Ptr</a> &amp;&#160;</td>
+          <td class="paramname"><em>viewer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="abdba35d7f261c4fb421bcc7a7f4cbeae" name="abdba35d7f261c4fb421bcc7a7f4cbeae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdba35d7f261c4fb421bcc7a7f4cbeae">&#9670;&#160;</a></span>m_camera</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCamera.html#a947a0d0c6aedc81aee709437de4edb89">Camera::Ptr</a> Backend::m_camera</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>相机，保存内参 </p>
+
+</div>
+</div>
+<a id="a45809f4f23a9609c0f9add98e779c805" name="a45809f4f23a9609c0f9add98e779c805"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45809f4f23a9609c0f9add98e779c805">&#9670;&#160;</a></span>m_isStop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Backend::m_isStop = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>后端停止标识 </p>
+
+</div>
+</div>
+<a id="aabc785317bef848c4e891aecf771c212" name="aabc785317bef848c4e891aecf771c212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabc785317bef848c4e891aecf771c212">&#9670;&#160;</a></span>m_map</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMap.html#ad0d64115a386bce07aa182e1935f40b8">Map::Ptr</a> Backend::m_map</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>地图 </p>
+
+</div>
+</div>
+<a id="ab708b92c363895c73acb03e586f4cff7" name="ab708b92c363895c73acb03e586f4cff7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab708b92c363895c73acb03e586f4cff7">&#9670;&#160;</a></span>m_viewer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classViewer.html#a48c59cba7d342beb04f4f984b6c88ed8">Viewer::Ptr</a> Backend::m_viewer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>全局展示对象 </p>
+
+</div>
+</div>
+<a id="ac506962d88a386f5dca16d4710931086" name="ac506962d88a386f5dca16d4710931086"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac506962d88a386f5dca16d4710931086">&#9670;&#160;</a></span>Ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EIGEN_MAKE_ALIGNED_OPERATOR_NEW typedef std::shared_ptr&lt;<a class="el" href="classBackend.html">Backend</a>&gt; Backend::Ptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
-<li>/home/rookie-lu/Project/mlk-graph-slam/include/<a class="el" href="backend_8h_source.html">backend.h</a></li>
-<li>/home/rookie-lu/Project/mlk-graph-slam/src/<b>backend.cc</b></li>
+<li>include/<a class="el" href="backend_8h_source.html">backend.h</a></li>
+<li>src/<a class="el" href="backend_8cc.html">backend.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

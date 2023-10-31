@@ -89,6 +89,8 @@ $(document).ready(function(){initNavTree('classApplication.html',''); initResiza
 <a href="#pub-types">Public 类型</a> &#124;
 <a href="#pub-methods">Public 成员函数</a> &#124;
 <a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
 <a href="classApplication-members.html">所有成员列表</a>  </div>
   <div class="headertitle"><div class="title">Application类 参考</div></div>
 </div><!--header-->
@@ -101,17 +103,14 @@ $(document).ready(function(){initNavTree('classApplication.html',''); initResiza
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public 类型</h2></td></tr>
-<tr class="memitem:acc84c6b3ebf91074eaf5cc34cfc825eb" id="r_acc84c6b3ebf91074eaf5cc34cfc825eb"><td class="memItemLeft" align="right" valign="top"><a id="acc84c6b3ebf91074eaf5cc34cfc825eb" name="acc84c6b3ebf91074eaf5cc34cfc825eb"></a>
-typedef std::shared_ptr&lt; <a class="el" href="classApplication.html">Application</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Ptr</b></td></tr>
+<tr class="memitem:acc84c6b3ebf91074eaf5cc34cfc825eb" id="r_acc84c6b3ebf91074eaf5cc34cfc825eb"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="classApplication.html">Application</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#acc84c6b3ebf91074eaf5cc34cfc825eb">Ptr</a></td></tr>
 <tr class="separator:acc84c6b3ebf91074eaf5cc34cfc825eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a3ad4969696dab394487c29dc89c84fdf" id="r_a3ad4969696dab394487c29dc89c84fdf"><td class="memItemLeft" align="right" valign="top"><a id="a3ad4969696dab394487c29dc89c84fdf" name="a3ad4969696dab394487c29dc89c84fdf"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Application</b> (const <a class="el" href="classApplication.html">Application</a> &amp;other)=delete</td></tr>
+<tr class="memitem:a3ad4969696dab394487c29dc89c84fdf" id="r_a3ad4969696dab394487c29dc89c84fdf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#a3ad4969696dab394487c29dc89c84fdf">Application</a> (const <a class="el" href="classApplication.html">Application</a> &amp;other)=delete</td></tr>
 <tr class="separator:a3ad4969696dab394487c29dc89c84fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abae098df9b44712ce0f54fc76d6f4139" id="r_abae098df9b44712ce0f54fc76d6f4139"><td class="memItemLeft" align="right" valign="top"><a id="abae098df9b44712ce0f54fc76d6f4139" name="abae098df9b44712ce0f54fc76d6f4139"></a>
-<a class="el" href="classApplication.html">Application</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classApplication.html">Application</a> &amp;other)=delete</td></tr>
+<tr class="memitem:abae098df9b44712ce0f54fc76d6f4139" id="r_abae098df9b44712ce0f54fc76d6f4139"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classApplication.html">Application</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#abae098df9b44712ce0f54fc76d6f4139">operator=</a> (const <a class="el" href="classApplication.html">Application</a> &amp;other)=delete</td></tr>
 <tr class="separator:abae098df9b44712ce0f54fc76d6f4139"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68965449404743bf1add056784d6cf81" id="r_a68965449404743bf1add056784d6cf81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#a68965449404743bf1add056784d6cf81">run</a> ()</td></tr>
 <tr class="memdesc:a68965449404743bf1add056784d6cf81"><td class="mdescLeft">&#160;</td><td class="mdescRight">启动三个线程  <br /></td></tr>
@@ -119,13 +118,160 @@ Public 成员函数</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 静态 Public 成员函数</h2></td></tr>
-<tr class="memitem:ab171cfa1886c61e2d4d61b615ecc5e9e" id="r_ab171cfa1886c61e2d4d61b615ecc5e9e"><td class="memItemLeft" align="right" valign="top"><a id="ab171cfa1886c61e2d4d61b615ecc5e9e" name="ab171cfa1886c61e2d4d61b615ecc5e9e"></a>
-static Ptr&#160;</td><td class="memItemRight" valign="bottom"><b>getInstance</b> ()</td></tr>
+<tr class="memitem:ab171cfa1886c61e2d4d61b615ecc5e9e" id="r_ab171cfa1886c61e2d4d61b615ecc5e9e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classApplication.html#acc84c6b3ebf91074eaf5cc34cfc825eb">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#ab171cfa1886c61e2d4d61b615ecc5e9e">getInstance</a> ()</td></tr>
 <tr class="separator:ab171cfa1886c61e2d4d61b615ecc5e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:acd19e7d9c62c246c62128bf94112482a" id="r_acd19e7d9c62c246c62128bf94112482a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#acd19e7d9c62c246c62128bf94112482a">Application</a> ()</td></tr>
+<tr class="memdesc:acd19e7d9c62c246c62128bf94112482a"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化三个线程  <br /></td></tr>
+<tr class="separator:acd19e7d9c62c246c62128bf94112482a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a316f61ed9655c7734ed6615c8003a502" id="r_a316f61ed9655c7734ed6615c8003a502"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFrontend.html#a9214342ba3f4fd75466a1e9616296630">Frontend::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#a316f61ed9655c7734ed6615c8003a502">m_frontend</a></td></tr>
+<tr class="memdesc:a316f61ed9655c7734ed6615c8003a502"><td class="mdescLeft">&#160;</td><td class="mdescRight">前端  <br /></td></tr>
+<tr class="separator:a316f61ed9655c7734ed6615c8003a502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada4bb5d8c4bf6ee17fae0fd5405a40c0" id="r_ada4bb5d8c4bf6ee17fae0fd5405a40c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBackend.html#ac506962d88a386f5dca16d4710931086">Backend::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#ada4bb5d8c4bf6ee17fae0fd5405a40c0">m_backend</a></td></tr>
+<tr class="memdesc:ada4bb5d8c4bf6ee17fae0fd5405a40c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">后端  <br /></td></tr>
+<tr class="separator:ada4bb5d8c4bf6ee17fae0fd5405a40c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee8a93e11458cdabbd94c435142b7a7" id="r_afee8a93e11458cdabbd94c435142b7a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classViewer.html#a48c59cba7d342beb04f4f984b6c88ed8">Viewer::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#afee8a93e11458cdabbd94c435142b7a7">m_viewer</a></td></tr>
+<tr class="memdesc:afee8a93e11458cdabbd94c435142b7a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">展示  <br /></td></tr>
+<tr class="separator:afee8a93e11458cdabbd94c435142b7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae7d61279cd34dd1f77c38d86f5fb742" id="r_aae7d61279cd34dd1f77c38d86f5fb742"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMap.html#ad0d64115a386bce07aa182e1935f40b8">Map::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#aae7d61279cd34dd1f77c38d86f5fb742">m_map</a></td></tr>
+<tr class="memdesc:aae7d61279cd34dd1f77c38d86f5fb742"><td class="mdescLeft">&#160;</td><td class="mdescRight">地图  <br /></td></tr>
+<tr class="separator:aae7d61279cd34dd1f77c38d86f5fb742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79867ed5e5d2d531720feacd42bd59dd" id="r_a79867ed5e5d2d531720feacd42bd59dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDataset.html#a41ec50044ddb8b181c244aecac4787ec">Dataset::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#a79867ed5e5d2d531720feacd42bd59dd">m_dataset</a></td></tr>
+<tr class="memdesc:a79867ed5e5d2d531720feacd42bd59dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">数据集  <br /></td></tr>
+<tr class="separator:a79867ed5e5d2d531720feacd42bd59dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c598b34910123063e1e26b2a58b5554" id="r_a0c598b34910123063e1e26b2a58b5554"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCamera.html#a947a0d0c6aedc81aee709437de4edb89">Camera::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#a0c598b34910123063e1e26b2a58b5554">m_camera</a></td></tr>
+<tr class="memdesc:a0c598b34910123063e1e26b2a58b5554"><td class="mdescLeft">&#160;</td><td class="mdescRight">相机  <br /></td></tr>
+<tr class="separator:a0c598b34910123063e1e26b2a58b5554"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>初始化和启动前端，后端和展示线程 </p>
-</div><h2 class="groupheader">成员函数说明</h2>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="acc84c6b3ebf91074eaf5cc34cfc825eb" name="acc84c6b3ebf91074eaf5cc34cfc825eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc84c6b3ebf91074eaf5cc34cfc825eb">&#9670;&#160;</a></span>Ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::shared_ptr&lt;<a class="el" href="classApplication.html">Application</a>&gt; <a class="el" href="classApplication.html#acc84c6b3ebf91074eaf5cc34cfc825eb">Application::Ptr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a3ad4969696dab394487c29dc89c84fdf" name="a3ad4969696dab394487c29dc89c84fdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ad4969696dab394487c29dc89c84fdf">&#9670;&#160;</a></span>Application() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Application::Application </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classApplication.html">Application</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd19e7d9c62c246c62128bf94112482a" name="acd19e7d9c62c246c62128bf94112482a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd19e7d9c62c246c62128bf94112482a">&#9670;&#160;</a></span>Application() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common__include_8h.html#a5a86b9e7eb5bd40ee1b3f3cf9f16b516">NAMESPACE_BEGIN</a> Application::Application </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初始化三个线程 </p>
+<p>对前端，后端和展示类进行初始化 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ab171cfa1886c61e2d4d61b615ecc5e9e" name="ab171cfa1886c61e2d4d61b615ecc5e9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab171cfa1886c61e2d4d61b615ecc5e9e">&#9670;&#160;</a></span>getInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classApplication.html#acc84c6b3ebf91074eaf5cc34cfc825eb">Ptr</a> Application::getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abae098df9b44712ce0f54fc76d6f4139" name="abae098df9b44712ce0f54fc76d6f4139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abae098df9b44712ce0f54fc76d6f4139">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classApplication.html">Application</a> &amp; Application::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classApplication.html">Application</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a68965449404743bf1add056784d6cf81" name="a68965449404743bf1add056784d6cf81"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a68965449404743bf1add056784d6cf81">&#9670;&#160;</a></span>run()</h2>
 
@@ -146,9 +292,154 @@ static Ptr&#160;</td><td class="memItemRight" valign="bottom"><b>getInstance</b>
 
 </div>
 </div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="ada4bb5d8c4bf6ee17fae0fd5405a40c0" name="ada4bb5d8c4bf6ee17fae0fd5405a40c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada4bb5d8c4bf6ee17fae0fd5405a40c0">&#9670;&#160;</a></span>m_backend</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBackend.html#ac506962d88a386f5dca16d4710931086">Backend::Ptr</a> Application::m_backend</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>后端 </p>
+
+</div>
+</div>
+<a id="a0c598b34910123063e1e26b2a58b5554" name="a0c598b34910123063e1e26b2a58b5554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c598b34910123063e1e26b2a58b5554">&#9670;&#160;</a></span>m_camera</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCamera.html#a947a0d0c6aedc81aee709437de4edb89">Camera::Ptr</a> Application::m_camera</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>相机 </p>
+
+</div>
+</div>
+<a id="a79867ed5e5d2d531720feacd42bd59dd" name="a79867ed5e5d2d531720feacd42bd59dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79867ed5e5d2d531720feacd42bd59dd">&#9670;&#160;</a></span>m_dataset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDataset.html#a41ec50044ddb8b181c244aecac4787ec">Dataset::Ptr</a> Application::m_dataset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>数据集 </p>
+
+</div>
+</div>
+<a id="a316f61ed9655c7734ed6615c8003a502" name="a316f61ed9655c7734ed6615c8003a502"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a316f61ed9655c7734ed6615c8003a502">&#9670;&#160;</a></span>m_frontend</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFrontend.html#a9214342ba3f4fd75466a1e9616296630">Frontend::Ptr</a> Application::m_frontend</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>前端 </p>
+
+</div>
+</div>
+<a id="aae7d61279cd34dd1f77c38d86f5fb742" name="aae7d61279cd34dd1f77c38d86f5fb742"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae7d61279cd34dd1f77c38d86f5fb742">&#9670;&#160;</a></span>m_map</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMap.html#ad0d64115a386bce07aa182e1935f40b8">Map::Ptr</a> Application::m_map</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>地图 </p>
+
+</div>
+</div>
+<a id="afee8a93e11458cdabbd94c435142b7a7" name="afee8a93e11458cdabbd94c435142b7a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afee8a93e11458cdabbd94c435142b7a7">&#9670;&#160;</a></span>m_viewer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classViewer.html#a48c59cba7d342beb04f4f984b6c88ed8">Viewer::Ptr</a> Application::m_viewer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>展示 </p>
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
-<li>/home/rookie-lu/Project/mlk-graph-slam/include/<a class="el" href="app_8h_source.html">app.h</a></li>
-<li>/home/rookie-lu/Project/mlk-graph-slam/src/<b>app.cc</b></li>
+<li>include/<a class="el" href="app_8h_source.html">app.h</a></li>
+<li>src/<a class="el" href="app_8cc.html">app.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

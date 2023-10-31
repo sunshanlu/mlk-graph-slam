@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['track_0',['track',['../classFrontend.html#a404360b2e4fa2a698efb191702715509',1,'Frontend']]],
-  ['trackcurrframe_1',['trackCurrFrame',['../classFrontend.html#adc33cd88429f81a79f4f9ead4e837992',1,'Frontend']]],
-  ['triangulate_2',['triangulate',['../classFrontend.html#aa3498e5a27bb938d9150b237df0430e1',1,'Frontend']]],
-  ['trinewpoint_3',['triNewPoint',['../classFrontend.html#ad74cb89a3902bd1749f69cf7ce790ea5',1,'Frontend']]]
+  ['main_0',['main',['../main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cc']]],
+  ['map_1',['map',['../classMap.html#a5618697d5c1aadb33ac680f5bb6f7d90',1,'Map::Map(const Map &amp;other)=delete'],['../classMap.html#a1197ab65e40dd20b891ba165471e3163',1,'Map::Map()=default']]]
 ];

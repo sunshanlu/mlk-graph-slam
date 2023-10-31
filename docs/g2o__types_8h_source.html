@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MLK-SLAM: /home/rookie-lu/Project/mlk-graph-slam/include/g2o_types.h 源文件</title>
+<title>MLK-SLAM: include/g2o_types.h 源文件</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,28 +88,30 @@ $(document).ready(function(){initNavTree('g2o__types_8h_source.html',''); initRe
   <div class="headertitle"><div class="title">g2o_types.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<a href="g2o__types_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="common__include_8h.html">common_include.h</a>&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="config_8h.html">config.h</a>&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>NAMESPACE_BEGIN</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><a class="code hl_define" href="common__include_8h.html#a5a86b9e7eb5bd40ee1b3f3cf9f16b516">NAMESPACE_BEGIN</a></div>
 <div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classPoseVertex.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="classPoseVertex.html">PoseVertex</a> : <span class="keyword">public</span> g2o::BaseVertex&lt;6, SE3d&gt; {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    EIGEN_MAKE_ALIGNED_OPERATOR_NEW</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">void</span> setToOriginImpl()<span class="keyword"> override </span>{ _estimate = SE3d(); }</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classPoseVertex.html#a4300620f26ed550f71a7a8e71c1865fd">   15</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPoseVertex.html#a4300620f26ed550f71a7a8e71c1865fd">setToOriginImpl</a>()<span class="keyword"> override </span>{ _estimate = <a class="code hl_typedef" href="common__include_8h.html#a8b05e098e742b1e5bb918ed54b17b97f">SE3d</a>(); }</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">bool</span> read(std::istream &amp;in)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classPoseVertex.html#a9b3cd6d9b27c3b1b882bf0117db2107d">   17</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPoseVertex.html#a9b3cd6d9b27c3b1b882bf0117db2107d">read</a>(std::istream &amp;in)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">bool</span> write(std::ostream &amp;os)<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classPoseVertex.html#a9677c8b32018ae33a2a4742d900b9651">   19</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPoseVertex.html#a9677c8b32018ae33a2a4742d900b9651">write</a>(std::ostream &amp;os)<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span> oplusImpl(<span class="keyword">const</span> <span class="keywordtype">double</span> *arr)<span class="keyword"> override </span>{</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        Vec6d update;</div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classPoseVertex.html#a1d2a80fa977fac55533bce577569d9a0">   21</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPoseVertex.html#a1d2a80fa977fac55533bce577569d9a0">oplusImpl</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> *arr)<span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <a class="code hl_typedef" href="common__include_8h.html#adebe05710ab35301f17f7ac387e64699">Vec6d</a> update;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        update &lt;&lt; arr[0], arr[1], arr[2], arr[3], arr[4], arr[5];</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        _estimate = SE3d::exp(update) * _estimate;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
+</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
 </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
@@ -118,17 +120,19 @@ $(document).ready(function(){initNavTree('g2o__types_8h_source.html',''); initRe
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    EIGEN_MAKE_ALIGNED_OPERATOR_NEW</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> setToOriginImpl()<span class="keyword"> override </span>{ _estimate = Vec3d(); }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classPointVertex.html#ac136b65930d8d5c824f12d4a979f9749">   36</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPointVertex.html#ac136b65930d8d5c824f12d4a979f9749">setToOriginImpl</a>()<span class="keyword"> override </span>{ _estimate = <a class="code hl_typedef" href="common__include_8h.html#ad91c18485ef230f516c4675752c93cad">Vec3d</a>(); }</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">bool</span> read(std::istream &amp;in)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classPointVertex.html#a73a11644a278a8a3646b415f555cc04f">   38</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPointVertex.html#a73a11644a278a8a3646b415f555cc04f">read</a>(std::istream &amp;in)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">bool</span> write(std::ostream &amp;os)<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classPointVertex.html#a41d167b6fa8fab3e8b07bdf1437277bb">   40</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPointVertex.html#a41d167b6fa8fab3e8b07bdf1437277bb">write</a>(std::ostream &amp;os)<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">void</span> oplusImpl(<span class="keyword">const</span> <span class="keywordtype">double</span> *arr)<span class="keyword"> override </span>{</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        Vec3d update;</div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classPointVertex.html#ad18279755605dedb2d4668a14398211e">   42</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPointVertex.html#ad18279755605dedb2d4668a14398211e">oplusImpl</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> *arr)<span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <a class="code hl_typedef" href="common__include_8h.html#ad91c18485ef230f516c4675752c93cad">Vec3d</a> update;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        update &lt;&lt; arr[0], arr[1], arr[2];</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        _estimate = _estimate + update;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
 </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
@@ -136,21 +140,23 @@ $(document).ready(function(){initNavTree('g2o__types_8h_source.html',''); initRe
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classPoseEdge.html">   53</a></span><span class="keyword">class </span><a class="code hl_class" href="classPoseEdge.html">PoseEdge</a> : <span class="keyword">public</span> g2o::BaseUnaryEdge&lt;2, Vec2d, PoseVertex&gt; {</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    EIGEN_MAKE_ALIGNED_OPERATOR_NEW</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">bool</span> read(std::istream &amp;in)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classPoseEdge.html#a756fe3b11f8effcce6e01bed43045468">   56</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPoseEdge.html#a756fe3b11f8effcce6e01bed43045468">read</a>(std::istream &amp;in)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">bool</span> write(std::ostream &amp;out)<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classPoseEdge.html#a003b16b2eee9fdf38492a48a7c89e545">   58</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPoseEdge.html#a003b16b2eee9fdf38492a48a7c89e545">write</a>(std::ostream &amp;out)<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_class" href="classPoseEdge.html">PoseEdge</a>(<span class="keyword">const</span> Vec3d &amp;worldPoint, <span class="keyword">const</span> Mat3d &amp;K)</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        : m_point(worldPoint)</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        , m_K(K) {}</div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classPoseEdge.html#ac6c23060d5a288cee7329be7889e782d">   60</a></span>    <a class="code hl_function" href="classPoseEdge.html#ac6c23060d5a288cee7329be7889e782d">PoseEdge</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="common__include_8h.html#ad91c18485ef230f516c4675752c93cad">Vec3d</a> &amp;worldPoint, <span class="keyword">const</span> <a class="code hl_typedef" href="common__include_8h.html#ac49ab3df8372759f7162c6f4634d043d">Mat3d</a> &amp;K)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        : <a class="code hl_variable" href="classPoseEdge.html#ac6d2455bb88835a341a9362ab8081bbb">m_point</a>(worldPoint)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        , <a class="code hl_variable" href="classPoseEdge.html#a2dc9207ff5bb0e90a54850e602c9c758">m_K</a>(K) {}</div>
+</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">void</span> computeError() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPoseEdge.html#a39b9625ad06e7b4dd40b52ec78ac0440">computeError</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> linearizeOplus() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPoseEdge.html#abc01116d132b590e1ab89956624497d0">linearizeOplus</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    Vec3d m_point; </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    Mat3d m_K;     </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classPoseEdge.html#ac6d2455bb88835a341a9362ab8081bbb">   69</a></span>    <a class="code hl_typedef" href="common__include_8h.html#ad91c18485ef230f516c4675752c93cad">Vec3d</a> <a class="code hl_variable" href="classPoseEdge.html#ac6d2455bb88835a341a9362ab8081bbb">m_point</a>; </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classPoseEdge.html#a2dc9207ff5bb0e90a54850e602c9c758">   70</a></span>    <a class="code hl_typedef" href="common__include_8h.html#ac49ab3df8372759f7162c6f4634d043d">Mat3d</a> <a class="code hl_variable" href="classPoseEdge.html#a2dc9207ff5bb0e90a54850e602c9c758">m_K</a>;     </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>};</div>
 </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
@@ -158,28 +164,57 @@ $(document).ready(function(){initNavTree('g2o__types_8h_source.html',''); initRe
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classPosePointEdge.html">   77</a></span><span class="keyword">class </span><a class="code hl_class" href="classPosePointEdge.html">PosePointEdge</a> : <span class="keyword">public</span> g2o::BaseBinaryEdge&lt;2, Vec2d, PoseVertex, PointVertex&gt; {</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    EIGEN_MAKE_ALIGNED_OPERATOR_NEW</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">bool</span> read(std::istream &amp;in)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classPosePointEdge.html#a09c6248d90159734b88e7c9a0eb012d5">   80</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPosePointEdge.html#a09c6248d90159734b88e7c9a0eb012d5">read</a>(std::istream &amp;in)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">bool</span> write(std::ostream &amp;out)<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classPosePointEdge.html#a7e8cb0ab0ef4bf0efb467f205b534db0">   82</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPosePointEdge.html#a7e8cb0ab0ef4bf0efb467f205b534db0">write</a>(std::ostream &amp;out)<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordtype">void</span> computeError() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPosePointEdge.html#a391a940a9b37ff22f925eff65a22a13c">computeError</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_class" href="classPosePointEdge.html">PosePointEdge</a>(<span class="keyword">const</span> Mat3d &amp;K)</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        : m_K(K) {}</div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classPosePointEdge.html#ac9af0e2a76ba9fa1f6a9134ecb9fe34f">   86</a></span>    <a class="code hl_function" href="classPosePointEdge.html#ac9af0e2a76ba9fa1f6a9134ecb9fe34f">PosePointEdge</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="common__include_8h.html#ac49ab3df8372759f7162c6f4634d043d">Mat3d</a> &amp;K)</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        : <a class="code hl_variable" href="classPosePointEdge.html#a74b5843373be6297a75068e4c0d37c6c">m_K</a>(K) {}</div>
+</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> linearizeOplus() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classPosePointEdge.html#a1d44c27bd1671b00238deacb9d78d525">linearizeOplus</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    Mat3d m_K; </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classPosePointEdge.html#a74b5843373be6297a75068e4c0d37c6c">   92</a></span>    <a class="code hl_typedef" href="common__include_8h.html#ac49ab3df8372759f7162c6f4634d043d">Mat3d</a> <a class="code hl_variable" href="classPosePointEdge.html#a74b5843373be6297a75068e4c0d37c6c">m_K</a>; </div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>};</div>
 </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>NAMESPACE_END</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><a class="code hl_define" href="common__include_8h.html#a552036593282adfb00999ab4152fc0ac">NAMESPACE_END</a></div>
 <div class="ttc" id="aclassPointVertex_html"><div class="ttname"><a href="classPointVertex.html">PointVertex</a></div><div class="ttdoc">地图点顶点</div><div class="ttdef"><b>Definition</b> g2o_types.h:32</div></div>
+<div class="ttc" id="aclassPointVertex_html_a41d167b6fa8fab3e8b07bdf1437277bb"><div class="ttname"><a href="classPointVertex.html#a41d167b6fa8fab3e8b07bdf1437277bb">PointVertex::write</a></div><div class="ttdeci">bool write(std::ostream &amp;os) const override</div><div class="ttdef"><b>Definition</b> g2o_types.h:40</div></div>
+<div class="ttc" id="aclassPointVertex_html_a73a11644a278a8a3646b415f555cc04f"><div class="ttname"><a href="classPointVertex.html#a73a11644a278a8a3646b415f555cc04f">PointVertex::read</a></div><div class="ttdeci">bool read(std::istream &amp;in) override</div><div class="ttdef"><b>Definition</b> g2o_types.h:38</div></div>
+<div class="ttc" id="aclassPointVertex_html_ac136b65930d8d5c824f12d4a979f9749"><div class="ttname"><a href="classPointVertex.html#ac136b65930d8d5c824f12d4a979f9749">PointVertex::setToOriginImpl</a></div><div class="ttdeci">EIGEN_MAKE_ALIGNED_OPERATOR_NEW void setToOriginImpl() override</div><div class="ttdef"><b>Definition</b> g2o_types.h:36</div></div>
+<div class="ttc" id="aclassPointVertex_html_ad18279755605dedb2d4668a14398211e"><div class="ttname"><a href="classPointVertex.html#ad18279755605dedb2d4668a14398211e">PointVertex::oplusImpl</a></div><div class="ttdeci">void oplusImpl(const double *arr) override</div><div class="ttdef"><b>Definition</b> g2o_types.h:42</div></div>
 <div class="ttc" id="aclassPoseEdge_html"><div class="ttname"><a href="classPoseEdge.html">PoseEdge</a></div><div class="ttdoc">只含有位姿的一元边</div><div class="ttdef"><b>Definition</b> g2o_types.h:53</div></div>
+<div class="ttc" id="aclassPoseEdge_html_a003b16b2eee9fdf38492a48a7c89e545"><div class="ttname"><a href="classPoseEdge.html#a003b16b2eee9fdf38492a48a7c89e545">PoseEdge::write</a></div><div class="ttdeci">bool write(std::ostream &amp;out) const override</div><div class="ttdef"><b>Definition</b> g2o_types.h:58</div></div>
+<div class="ttc" id="aclassPoseEdge_html_a2dc9207ff5bb0e90a54850e602c9c758"><div class="ttname"><a href="classPoseEdge.html#a2dc9207ff5bb0e90a54850e602c9c758">PoseEdge::m_K</a></div><div class="ttdeci">Mat3d m_K</div><div class="ttdoc">相机的内参矩阵K</div><div class="ttdef"><b>Definition</b> g2o_types.h:70</div></div>
+<div class="ttc" id="aclassPoseEdge_html_a39b9625ad06e7b4dd40b52ec78ac0440"><div class="ttname"><a href="classPoseEdge.html#a39b9625ad06e7b4dd40b52ec78ac0440">PoseEdge::computeError</a></div><div class="ttdeci">void computeError() override</div><div class="ttdef"><b>Definition</b> g2o_types.cc:5</div></div>
+<div class="ttc" id="aclassPoseEdge_html_a756fe3b11f8effcce6e01bed43045468"><div class="ttname"><a href="classPoseEdge.html#a756fe3b11f8effcce6e01bed43045468">PoseEdge::read</a></div><div class="ttdeci">EIGEN_MAKE_ALIGNED_OPERATOR_NEW bool read(std::istream &amp;in) override</div><div class="ttdef"><b>Definition</b> g2o_types.h:56</div></div>
+<div class="ttc" id="aclassPoseEdge_html_abc01116d132b590e1ab89956624497d0"><div class="ttname"><a href="classPoseEdge.html#abc01116d132b590e1ab89956624497d0">PoseEdge::linearizeOplus</a></div><div class="ttdeci">void linearizeOplus() override</div><div class="ttdef"><b>Definition</b> g2o_types.cc:13</div></div>
+<div class="ttc" id="aclassPoseEdge_html_ac6c23060d5a288cee7329be7889e782d"><div class="ttname"><a href="classPoseEdge.html#ac6c23060d5a288cee7329be7889e782d">PoseEdge::PoseEdge</a></div><div class="ttdeci">PoseEdge(const Vec3d &amp;worldPoint, const Mat3d &amp;K)</div><div class="ttdef"><b>Definition</b> g2o_types.h:60</div></div>
+<div class="ttc" id="aclassPoseEdge_html_ac6d2455bb88835a341a9362ab8081bbb"><div class="ttname"><a href="classPoseEdge.html#ac6d2455bb88835a341a9362ab8081bbb">PoseEdge::m_point</a></div><div class="ttdeci">Vec3d m_point</div><div class="ttdoc">地图点的位置信息</div><div class="ttdef"><b>Definition</b> g2o_types.h:69</div></div>
 <div class="ttc" id="aclassPosePointEdge_html"><div class="ttname"><a href="classPosePointEdge.html">PosePointEdge</a></div><div class="ttdoc">位姿和地图点二元边</div><div class="ttdef"><b>Definition</b> g2o_types.h:77</div></div>
+<div class="ttc" id="aclassPosePointEdge_html_a09c6248d90159734b88e7c9a0eb012d5"><div class="ttname"><a href="classPosePointEdge.html#a09c6248d90159734b88e7c9a0eb012d5">PosePointEdge::read</a></div><div class="ttdeci">EIGEN_MAKE_ALIGNED_OPERATOR_NEW bool read(std::istream &amp;in) override</div><div class="ttdef"><b>Definition</b> g2o_types.h:80</div></div>
+<div class="ttc" id="aclassPosePointEdge_html_a1d44c27bd1671b00238deacb9d78d525"><div class="ttname"><a href="classPosePointEdge.html#a1d44c27bd1671b00238deacb9d78d525">PosePointEdge::linearizeOplus</a></div><div class="ttdeci">virtual void linearizeOplus() override</div><div class="ttdef"><b>Definition</b> g2o_types.cc:39</div></div>
+<div class="ttc" id="aclassPosePointEdge_html_a391a940a9b37ff22f925eff65a22a13c"><div class="ttname"><a href="classPosePointEdge.html#a391a940a9b37ff22f925eff65a22a13c">PosePointEdge::computeError</a></div><div class="ttdeci">void computeError() override</div><div class="ttdef"><b>Definition</b> g2o_types.cc:29</div></div>
+<div class="ttc" id="aclassPosePointEdge_html_a74b5843373be6297a75068e4c0d37c6c"><div class="ttname"><a href="classPosePointEdge.html#a74b5843373be6297a75068e4c0d37c6c">PosePointEdge::m_K</a></div><div class="ttdeci">Mat3d m_K</div><div class="ttdoc">相机的内参矩阵K</div><div class="ttdef"><b>Definition</b> g2o_types.h:92</div></div>
+<div class="ttc" id="aclassPosePointEdge_html_a7e8cb0ab0ef4bf0efb467f205b534db0"><div class="ttname"><a href="classPosePointEdge.html#a7e8cb0ab0ef4bf0efb467f205b534db0">PosePointEdge::write</a></div><div class="ttdeci">bool write(std::ostream &amp;out) const override</div><div class="ttdef"><b>Definition</b> g2o_types.h:82</div></div>
+<div class="ttc" id="aclassPosePointEdge_html_ac9af0e2a76ba9fa1f6a9134ecb9fe34f"><div class="ttname"><a href="classPosePointEdge.html#ac9af0e2a76ba9fa1f6a9134ecb9fe34f">PosePointEdge::PosePointEdge</a></div><div class="ttdeci">PosePointEdge(const Mat3d &amp;K)</div><div class="ttdef"><b>Definition</b> g2o_types.h:86</div></div>
 <div class="ttc" id="aclassPoseVertex_html"><div class="ttname"><a href="classPoseVertex.html">PoseVertex</a></div><div class="ttdoc">位姿顶点</div><div class="ttdef"><b>Definition</b> g2o_types.h:11</div></div>
+<div class="ttc" id="aclassPoseVertex_html_a1d2a80fa977fac55533bce577569d9a0"><div class="ttname"><a href="classPoseVertex.html#a1d2a80fa977fac55533bce577569d9a0">PoseVertex::oplusImpl</a></div><div class="ttdeci">void oplusImpl(const double *arr) override</div><div class="ttdef"><b>Definition</b> g2o_types.h:21</div></div>
+<div class="ttc" id="aclassPoseVertex_html_a4300620f26ed550f71a7a8e71c1865fd"><div class="ttname"><a href="classPoseVertex.html#a4300620f26ed550f71a7a8e71c1865fd">PoseVertex::setToOriginImpl</a></div><div class="ttdeci">EIGEN_MAKE_ALIGNED_OPERATOR_NEW void setToOriginImpl() override</div><div class="ttdef"><b>Definition</b> g2o_types.h:15</div></div>
+<div class="ttc" id="aclassPoseVertex_html_a9677c8b32018ae33a2a4742d900b9651"><div class="ttname"><a href="classPoseVertex.html#a9677c8b32018ae33a2a4742d900b9651">PoseVertex::write</a></div><div class="ttdeci">bool write(std::ostream &amp;os) const override</div><div class="ttdef"><b>Definition</b> g2o_types.h:19</div></div>
+<div class="ttc" id="aclassPoseVertex_html_a9b3cd6d9b27c3b1b882bf0117db2107d"><div class="ttname"><a href="classPoseVertex.html#a9b3cd6d9b27c3b1b882bf0117db2107d">PoseVertex::read</a></div><div class="ttdeci">bool read(std::istream &amp;in) override</div><div class="ttdef"><b>Definition</b> g2o_types.h:17</div></div>
 <div class="ttc" id="acommon__include_8h_html"><div class="ttname"><a href="common__include_8h.html">common_include.h</a></div><div class="ttdoc">引入所有所需头文件，定义所有所需超参数</div></div>
+<div class="ttc" id="acommon__include_8h_html_a552036593282adfb00999ab4152fc0ac"><div class="ttname"><a href="common__include_8h.html#a552036593282adfb00999ab4152fc0ac">NAMESPACE_END</a></div><div class="ttdeci">#define NAMESPACE_END</div><div class="ttdef"><b>Definition</b> common_include.h:41</div></div>
+<div class="ttc" id="acommon__include_8h_html_a5a86b9e7eb5bd40ee1b3f3cf9f16b516"><div class="ttname"><a href="common__include_8h.html#a5a86b9e7eb5bd40ee1b3f3cf9f16b516">NAMESPACE_BEGIN</a></div><div class="ttdeci">#define NAMESPACE_BEGIN</div><div class="ttdef"><b>Definition</b> common_include.h:40</div></div>
+<div class="ttc" id="acommon__include_8h_html_a8b05e098e742b1e5bb918ed54b17b97f"><div class="ttname"><a href="common__include_8h.html#a8b05e098e742b1e5bb918ed54b17b97f">SE3d</a></div><div class="ttdeci">Sophus::SE3d SE3d</div><div class="ttdef"><b>Definition</b> common_include.h:57</div></div>
+<div class="ttc" id="acommon__include_8h_html_ac49ab3df8372759f7162c6f4634d043d"><div class="ttname"><a href="common__include_8h.html#ac49ab3df8372759f7162c6f4634d043d">Mat3d</a></div><div class="ttdeci">Eigen::Matrix3d Mat3d</div><div class="ttdef"><b>Definition</b> common_include.h:50</div></div>
+<div class="ttc" id="acommon__include_8h_html_ad91c18485ef230f516c4675752c93cad"><div class="ttname"><a href="common__include_8h.html#ad91c18485ef230f516c4675752c93cad">Vec3d</a></div><div class="ttdeci">Eigen::Vector3d Vec3d</div><div class="ttdef"><b>Definition</b> common_include.h:47</div></div>
+<div class="ttc" id="acommon__include_8h_html_adebe05710ab35301f17f7ac387e64699"><div class="ttname"><a href="common__include_8h.html#adebe05710ab35301f17f7ac387e64699">Vec6d</a></div><div class="ttdeci">Eigen::Matrix&lt; double, 6, 1 &gt; Vec6d</div><div class="ttdef"><b>Definition</b> common_include.h:49</div></div>
 <div class="ttc" id="aconfig_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div><div class="ttdoc">编写slam系统的超参数信息类</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -187,7 +222,7 @@ $(document).ready(function(){initNavTree('g2o__types_8h_source.html',''); initRe
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>g2o_types.h</b></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="g2o__types_8h.html">g2o_types.h</a></li>
   </ul>
 </div>
 </body>

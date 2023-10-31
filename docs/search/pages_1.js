@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mlk_20graph_20slam_0',['mlk-graph-slam',['../index.html',1,'']]]
+  ['mlk_20slam_0',['MLK-SLAM',['../index.html',1,'']]]
 ];
