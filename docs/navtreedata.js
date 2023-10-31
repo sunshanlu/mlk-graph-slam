@@ -27,12 +27,9 @@ var NAVTREE =
   [ "MLK-SLAM", "index.html", [
     [ "特征", "index.html#autotoc_md1", null ],
     [ "依赖", "index.html#autotoc_md2", null ],
-    [ "文档", "index.html#autotoc_md3", null ],
-    [ "LICENSE", "index.html#autotoc_md4", null ],
-    [ "Installation", "md_doc_2Installation.html", [
-      [ "安装依赖", "md_doc_2Installation.html#autotoc_md6", null ]
-    ] ],
-    [ "Run", "md_doc_2Run.html", null ],
+    [ "安装", "index.html#autotoc_md3", null ],
+    [ "运行", "index.html#autotoc_md4", null ],
+    [ "LICENSE", "index.html#autotoc_md5", null ],
     [ "类", "annotated.html", [
       [ "类列表", "annotated.html", "annotated_dup" ],
       [ "类索引", "classes.html", null ],
@@ -61,7 +58,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"structMapPoint.html#a245a90852705f699c9467bc080ebcf1f"
+"structMapPoint.html#ab1bc72fc884fc015a6125839ee1d5160"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

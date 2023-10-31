@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['installation_0',['Installation',['../md_doc_2Installation.html',1,'']]]
+  ['mlk_20slam_0',['MLK-SLAM',['../index.html',1,'']]]
 ];

@@ -107,13 +107,59 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <h1><a class="anchor" id="autotoc_md2"></a>
 依赖</h1>
 <ul>
-<li><a href="https://github.com/microsoft/vcpkg">vcpkg install</a></li>
+<li><a href="https://github.com/microsoft/vcpkg">vcpkg install(可选)</a></li>
 <li><a href="https://cmake.org/">cmake 3.16+</a></li>
 </ul>
 <h1><a class="anchor" id="autotoc_md3"></a>
-文档</h1>
-<p>文档地址：<a href="https://sunshanlu.github.io/mlk-graph-slam/">https://sunshanlu.github.io/mlk-graph-slam/</a></p>
-<h1><a class="anchor" id="autotoc_md4"></a>
+安装</h1>
+<p>文档提供两种安装项目依赖的方式</p><ul>
+<li>通过vcpkg包管理工具安装（推荐）</li>
+<li>通过手动下载依赖包进行安装</li>
+</ul>
+<p>方式一：采用<a href="https://github.com/microsoft/vcpkg">vcpkg包管理工具</a>安装依赖</p>
+<p>需要去vcpkg的github主页进行vcpkg管理工具的安装 </p><div class="fragment"><div class="line">mkdir build</div>
+<div class="line">cd build</div>
+<div class="line">cmake .. -DCMAKE_TOOLCHAIN_FILE=&quot;[vcpkg root]/scripts/buildsystems/vcpkg.cmake&quot;</div>
+<div class="line">cmake --build . -j10</div>
+</div><!-- fragment --><p>方式二：手动下载依赖包进行安装</p><ul>
+<li><a href="https://opencv.org/releases/">OpenCV – 3.4.16</a></li>
+<li><a href="https://github.com/fmtlib/fmt/releases/tag/8.1.0">fmt - 8.1.0</a></li>
+<li><a href="https://github.com/gabime/spdlog/releases/tag/v1.10.0">spdlog - 1.10.0</a></li>
+<li><a href="https://github.com/open-source-parsers/jsoncpp/releases/tag/1.9.5">jsoncpp - 1.9.5</a></li>
+<li><a href="https://github.com/RainerKuemmerle/g2o/releases/tag/20230223_git">g20 - 2023-02-23</a></li>
+<li><a href="https://gitlab.com/libeigen/eigen/-/releases">eigen - 3.4.0</a></li>
+</ul>
+<p>注意，采用第二种方式进行项目依赖库的安装的话，需要修改<code>cmake/FindG2O.cmake</code>文件的内容。将 <a href="https://github.com/gaoxiang12/slambook2/blob/master/ch13/cmake_modules/FindG2O.cmake">https://github.com/gaoxiang12/slambook2/blob/master/ch13/cmake_modules/FindG2O.cmake</a> 的<code>FindG2O.cmake</code>内容替换到<code>cmake/FindG2O.cmake</code>中即可。</p>
+<div class="fragment"><div class="line">mkdir build</div>
+<div class="line">cd build</div>
+<div class="line">cmake ..</div>
+<div class="line">buildsystems/vcpkg.cmake&quot;</div>
+<div class="line">cmake --build . -j10</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
+运行</h1>
+<p>配置文件config.json中的变量含义如下： </p><div class="fragment"><div class="line"># config/config.json</div>
+<div class="line">KITTI_PATH                    KITTI数据集地址</div>
+<div class="line">DETECT_FEATURE_NUM            征检测数目</div>
+<div class="line">MAX_ACTIVE_KEYFRAME_NUM       Map中m_activeFrames的数目</div>
+<div class="line">KEYFRAME_DISTANCE_TH          保证Map::m_activeFrames的距离大于0.5</div>
+<div class="line">EDGE_CHI2_TH                  优化边的阈值</div>
+<div class="line">OUTLIER_DETECT_ITERATIONS     进行异常点检测的优化迭代次数</div>
+<div class="line">OPTIMIZE_ITERATIONS           单次优化迭代次数</div>
+<div class="line">TRACK_GOOD_TH                 track good 阈值</div>
+<div class="line">TRACK_BAD_TH                  track bad 阈值</div>
+<div class="line">MIN_MAPPOINTS_NUM_FOR_TRACK   track可执行的最少特征数目</div>
+<div class="line">MAPPOINT_SIZE                 定义绘制地图点的大小</div>
+<div class="line">LINE_WIDTH                    定义绘制线断的大小</div>
+<div class="line">CURR_FRAME_COLOR              定义绘制当前帧的颜色</div>
+<div class="line">MAPPOINT_COLOR                定义绘制地图点的颜色</div>
+<div class="line">MAP_FRAME_COLOR               定义绘制激活关键帧的颜色</div>
+<div class="line">FEATURE_COLOR                 定义绘制特征点的颜色 </div>
+</div><!-- fragment --><ul>
+<li>项目编译完成后记得将<code>KITTI_PATH</code>的默认值修改到你电脑上的路径</li>
+<li>其他参数可以保持不变，也可以根据你的理解自行修改</li>
+<li>运行<code>build/mlk-slam</code>可执行文件即可</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md5"></a>
 LICENSE</h1>
 <p>该项目的代码是根据<a href="./LICENSE">MIT License</a>许可证授权的。如需引用，请说明出处。 </p>
 </div></div><!-- PageDoc -->
