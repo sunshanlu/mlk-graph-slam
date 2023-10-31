@@ -33,7 +33,7 @@
 - [cmake 3.16+](https://cmake.org/)
 
 ## 文档
-文档地址：https://sunshanlu.github.io/mlk-graph-slam/annotated.html
+文档地址：https://sunshanlu.github.io/mlk-graph-slam/
 
 ## LICENSE
 
