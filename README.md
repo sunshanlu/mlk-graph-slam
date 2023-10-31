@@ -10,5 +10,5 @@
 
 该项目构建了，一种基于多层光流法的前端和滑动窗口后端BA的简单slam系统。系统的运行效果如下所示：
 
-[![mlk-slam](https://img.youtube.com/vi/6GFBdjZPgTg/0.jpg)](https://www.youtube.com/watch?v=6GFBdjZPgTg)
+[![mlk-slam](https://github.com/sunshanlu/mlk-graph-slam/tree/main/doc/imgs/mlk-slam.png)](https://www.youtube.com/watch?v=6GFBdjZPgTg)
 
